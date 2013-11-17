@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://nakednous.github.io
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: NakedNous
+subtitle: Personal blog
+author: Jean Pierre Charalambos
 simple_search: http://google.com/search
 description:
 
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions:
     - autolink
