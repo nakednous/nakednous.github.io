@@ -54,9 +54,9 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
-# page_asides:
+blog_index_asides: [asides/recent_posts.html]
+post_asides: [asides/recent_posts.html]
+page_asides: [asides/recent_posts.html, asides/github.html]
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -90,11 +90,11 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name: nakednous
+disqus_short_name: nakednousgithubio
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
+google_analytics_tracking_id: UA-45867702-1
 
 # Facebook Like
 facebook_like: false
