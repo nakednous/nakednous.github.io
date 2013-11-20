@@ -8,7 +8,7 @@ categories: dandelion
 
 #Problem
 
-Connect dandelion to other framworks
+Connect dandelion to other framworks such as Processing.
 
 #Approach
 
