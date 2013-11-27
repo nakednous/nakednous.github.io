@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Proscene v2.0.0-alpha2"
+title: "Proscene v2.0.0-alpha2 released"
 date: 2013-11-26 17:13:29 -0500
 comments: true
 categories: proscene, dandelion
