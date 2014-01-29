@@ -1,4 +1,4 @@
-# Jean Pierre Charalambos website
+# Jean Pierre Charalambos Website
 
 Welcome to the source of my personal website powered by [octopress] (http://octopress.org/) using the
 [octostrap3](http://kaworu.github.io/octopress/) theme.
@@ -17,11 +17,9 @@ cd nakednous.github.io
 * Setup deployment (to github pages)
 
 ```sh
-bundle exec rake setup_github_pages
 #We use the two-branching arch suggested here: http://octopress.org/docs/deploying/github/
-#Other option would be:
-#git checkout source 
-#but this one makes bundle exec rake deploy below to fail
+git checkout source 
+bundle exec rake setup_github_pages
 git branch -v
 ```
 
