@@ -1,28 +1,75 @@
-## What is Octopress?
+# Jean Pierre Charalambos website
 
-Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
+Welcome to the source of my personal website powered by [octopress] (http://octopress.org/) using the
+[octostrap3](http://kaworu.github.io/octopress/) theme.
 
-1. **Octopress sports a clean responsive theme** written in semantic HTML5, focused on readability and friendliness toward mobile devices.
-2. **Code blogging is easy and beautiful.** Embed code (with [Solarized](http://ethanschoonover.com/solarized) styling) in your posts from gists, jsFiddle or from your filesystem.
-3. **Third party integration is simple** with built-in support for Pinboard, Delicious, GitHub Repositories, Disqus Comments and Google Analytics.
-4. **It's easy to use.** A collection of rake tasks simplifies development and makes deploying a cinch.
-5. **Ships with great plug-ins** some original and others from the Jekyll community &mdash; tested and improved.
+It's pure fun to play with and should be super-easy to hack. Read on to learn how...
 
-**Note**: Octopress requires a minimum Ruby version of `1.9.3-p0`.
+## Hacking procedure
 
-## Documentation
+1. Install the source
 
-Check out [Octopress.org](http://octopress.org/docs) for guides and documentation.
-It should all apply to our current stable version (found in the `master`
-branch). If this is not the case, [please submit a
-fix to our docs repo](https://github.com/octopress/docs).
+```sh
+git clone https://github.com/nakednous/nakednous.github.io.git
+cd nakednous.github.io
+#We use the two-branching arch suggested here: http://octopress.org/docs/deploying/github/
+git checkout source 
+git branch -v
+```
 
-## Contributing
+2. (Optionally) Update to upstream
 
-[![Build Status](https://travis-ci.org/imathis/octopress.png?branch=master)](https://travis-ci.org/imathis/octopress)
+```sh
+git remote add octopress https://github.com/imathis/octopress.git
+git remote -v
+git pull octopress master
+```
 
-We love to see people contributing to Octopress, whether it's a bug report, feature suggestion or a pull request. At the moment, we try to keep the core slick and lean, focusing on basic blogging needs, so some of your suggestions might not find their way into Octopress. For those ideas, we started a [list of 3rd party plug-ins](https://github.com/imathis/octopress/wiki/3rd-party-plugins), where you can link your own Octopress plug-in repositories. For the future, we're thinking about ways to easier add them into our main releases.
+3. Add the git submodule containing the theme
 
+```sh
+git submodule init
+git submodule update
+cd .themes/octostrap3
+git status
+#if it gives you HEAD detached at ... then run:
+git checkout master
+git status
+
+4. (Optionally) Update the theme to upstream
+
+```sh
+git remote -v
+git remote add octostrap3 https://github.com/kAworu/octostrap3.git
+git remote -v
+git pull octostrap3 master
+
+5. Complete the installation
+
+```sh
+cd ../..
+gem install bundler
+#edit your .bashrc to make bundler install gems locally (see: https://wiki.archlinux.org/index.php/ruby#Bundler)
+#now install the gems locally
+bundle install
+#edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.
+
+6. Install the octostrap3 theme
+
+```sh
+#following line would install default theme instead.
+#bundle exec rake install
+bundle exec rake 'install[octostrap3]'
+bundle exec rake generate
+bundle exec rake preview
+
+7. To post and render the website to localhost:
+
+```sh
+bundle exec rake new_post["Proscene v2.0.0-alpha3 Released"]
+bundle exec rake generate
+bundle exec rake preview
+```
 
 ## License
 (The MIT License)
@@ -34,8 +81,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-#### If you want to be awesome.
-- Proudly display the 'Powered by Octopress' credit in the footer.
-- Add your site to the Wiki so we can watch the community grow.
