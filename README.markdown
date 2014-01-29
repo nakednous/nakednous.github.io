@@ -7,14 +7,14 @@ It's pure fun to play with and should be super-easy to hack. Read on to learn ho
 
 ## Hacking procedure
 
-1. Install the source
+* Install the source
 
 ```sh
 git clone https://github.com/nakednous/nakednous.github.io.git
 cd nakednous.github.io
 ```
 
-2. Setup deployment (to github pages)
+* Setup deployment (to github pages)
 
 ```sh
 bundle exec rake setup_github_pages
@@ -25,7 +25,7 @@ bundle exec rake setup_github_pages
 git branch -v
 ```
 
-3. (Optionally) Update to upstream
+* (Optionally) Update to upstream
 
 ```sh
 git remote add octopress https://github.com/imathis/octopress.git
@@ -33,7 +33,7 @@ git remote -v
 git pull octopress master
 ```
 
-4. Add the git submodule containing the theme
+* Add the git submodule containing the theme
 
 ```sh
 git submodule init
@@ -45,7 +45,7 @@ git checkout master
 git status
 ```
 
-5. (Optionally) Update the theme to upstream
+* (Optionally) Update the theme to upstream
 
 ```sh
 git remote -v
@@ -54,7 +54,7 @@ git remote -v
 git pull octostrap3 master
 ```
 
-6. Complete the installation
+* Complete the installation
 
 ```sh
 cd ../..
@@ -65,7 +65,7 @@ bundle install
 #edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.
 ```
 
-7. Install the octostrap3 theme
+* Install the octostrap3 theme
 
 ```sh
 #following line would install default theme instead.
@@ -75,7 +75,7 @@ bundle exec rake generate
 bundle exec rake preview
 ```
 
-8. To post and render the website to localhost
+* To post and render the website to localhost
 
 ```sh
 bundle exec rake new_post["Proscene v2.0.0-alpha3 Released"]
@@ -83,7 +83,7 @@ bundle exec rake generate
 bundle exec rake preview
 ```
 
-9. If bundle exec rake deploy fails pushing the generated source to the master branch then
+* If bundle exec rake deploy fails pushing the generated source to the master branch then
 
 ```sh
 bundle exec rake deploy
