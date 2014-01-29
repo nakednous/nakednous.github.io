@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://nakednous.github.io/sitemap.xml 
