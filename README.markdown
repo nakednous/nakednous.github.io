@@ -81,11 +81,24 @@ rake generate
 rake preview
 ```
 
-* If `rake deploy` fails pushing the generated source to the master branch then
+* Deploy (to github pages)
 
 ```sh
 rake deploy
+```
+
+* If `rake deploy` fails pushing the generated source to the master branch then
+
+```sh
 git push -f --set-upstream origin master
+```
+
+* Commit and push the modified sources
+
+```sh
+git add .
+git commit -m 'your message'
+git push origin source
 ```
 
 ## License
