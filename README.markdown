@@ -19,7 +19,7 @@ cd nakednous.github.io
 ```sh
 #We use the two-branching arch suggested here: http://octopress.org/docs/deploying/github/
 git checkout source 
-bundle exec rake setup_github_pages
+rake setup_github_pages
 git branch -v
 ```
 
@@ -67,24 +67,24 @@ bundle install
 
 ```sh
 #following line would install default theme instead.
-#bundle exec rake install
-bundle exec rake 'install[octostrap3]'
-bundle exec rake generate
-bundle exec rake preview
+#rake install
+rake 'install[octostrap3]'
+rake generate
+rake preview
 ```
 
 * To post and render the website to localhost
 
 ```sh
-bundle exec rake new_post["Proscene v2.0.0-alpha3 Released"]
-bundle exec rake generate
-bundle exec rake preview
+rake new_post["Proscene v2.0.0-alpha3 Released"]
+rake generate
+rake preview
 ```
 
-* If bundle exec rake deploy fails pushing the generated source to the master branch then
+* If `rake deploy` fails pushing the generated source to the master branch then
 
 ```sh
-bundle exec rake deploy
+rake deploy
 git push -f --set-upstream origin master
 ```
 
