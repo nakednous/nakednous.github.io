@@ -12,12 +12,19 @@ It's pure fun to play with and should be super-easy to hack. Read on to learn ho
 ```sh
 git clone https://github.com/nakednous/nakednous.github.io.git
 cd nakednous.github.io
+
+2. Setup deplyoment (to github pages)
+
+```sh
+bundle exec rake setup_github_pages
 #We use the two-branching arch suggested here: http://octopress.org/docs/deploying/github/
-git checkout source 
+#Other option would be:
+#git checkout source 
+#but this one makes bundle exec rake deploy below to fail
 git branch -v
 ```
 
-2. (Optionally) Update to upstream
+3. (Optionally) Update to upstream
 
 ```sh
 git remote add octopress https://github.com/imathis/octopress.git
@@ -25,7 +32,7 @@ git remote -v
 git pull octopress master
 ```
 
-3. Add the git submodule containing the theme
+4. Add the git submodule containing the theme
 
 ```sh
 git submodule init
@@ -36,7 +43,7 @@ git status
 git checkout master
 git status
 
-4. (Optionally) Update the theme to upstream
+5. (Optionally) Update the theme to upstream
 
 ```sh
 git remote -v
@@ -44,7 +51,7 @@ git remote add octostrap3 https://github.com/kAworu/octostrap3.git
 git remote -v
 git pull octostrap3 master
 
-5. Complete the installation
+6. Complete the installation
 
 ```sh
 cd ../..
@@ -54,7 +61,7 @@ gem install bundler
 bundle install
 #edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.
 
-6. Install the octostrap3 theme
+7. Install the octostrap3 theme
 
 ```sh
 #following line would install default theme instead.
@@ -63,12 +70,19 @@ bundle exec rake 'install[octostrap3]'
 bundle exec rake generate
 bundle exec rake preview
 
-7. To post and render the website to localhost:
+8. To post and render the website to localhost
 
 ```sh
 bundle exec rake new_post["Proscene v2.0.0-alpha3 Released"]
 bundle exec rake generate
 bundle exec rake preview
+```
+
+9. If bundle exec rake deploy fails pushing yhe generated source to the master branch
+
+```sh
+bundle exec rake deploy
+git push -f --set-upstream origin master
 ```
 
 ## License
