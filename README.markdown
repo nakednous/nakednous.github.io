@@ -12,8 +12,9 @@ It's pure fun to play with and should be super-easy to hack. Read on to learn ho
 ```sh
 git clone https://github.com/nakednous/nakednous.github.io.git
 cd nakednous.github.io
+```
 
-2. Setup deplyoment (to github pages)
+2. Setup deployment (to github pages)
 
 ```sh
 bundle exec rake setup_github_pages
@@ -42,6 +43,7 @@ git status
 #if it gives you HEAD detached at ... then run:
 git checkout master
 git status
+```
 
 5. (Optionally) Update the theme to upstream
 
@@ -50,6 +52,7 @@ git remote -v
 git remote add octostrap3 https://github.com/kAworu/octostrap3.git
 git remote -v
 git pull octostrap3 master
+```
 
 6. Complete the installation
 
@@ -60,6 +63,7 @@ gem install bundler
 #now install the gems locally
 bundle install
 #edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.
+```
 
 7. Install the octostrap3 theme
 
@@ -69,6 +73,7 @@ bundle install
 bundle exec rake 'install[octostrap3]'
 bundle exec rake generate
 bundle exec rake preview
+```
 
 8. To post and render the website to localhost
 
@@ -78,7 +83,7 @@ bundle exec rake generate
 bundle exec rake preview
 ```
 
-9. If bundle exec rake deploy fails pushing yhe generated source to the master branch
+9. If bundle exec rake deploy fails pushing the generated source to the master branch then
 
 ```sh
 bundle exec rake deploy
