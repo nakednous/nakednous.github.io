@@ -17,10 +17,14 @@ cd nakednous.github.io
 * Setup deployment (to github pages)
 
 ```sh
-#We use the two-branching arch suggested here: http://octopress.org/docs/deploying/github/
-git checkout source 
-rake setup_github_pages
+#We use a two-branching architecture (http://octopress.org/docs/deploying/github/)
+git checkout source
 git branch -v
+#Tip found here: http://weishi.github.io/blog/2013/07/24/setup-an-existing-octopress-repository-after-git-clone/
+mkdir _deploy
+cd _deploy
+git init
+git remote add -t master -f origin https://github.com/nakednous/nakednous.github.io.git
 ```
 
 * (Optionally) Update to upstream
