@@ -25,6 +25,7 @@ mkdir _deploy
 cd _deploy
 git init
 git remote add -t master -f origin https://github.com/nakednous/nakednous.github.io.git
+cd ..
 ```
 
 * (Optionally) Update to upstream
