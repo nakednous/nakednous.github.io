@@ -41,10 +41,6 @@ git pull octopress master
 git submodule init
 git submodule update
 cd .themes/octostrap3
-git status
-#if it gives you HEAD detached at ... then run:
-git checkout master
-git status
 ```
 
 * (Optionally) Update the theme to upstream
