@@ -3,7 +3,7 @@ layout: post
 title: "Proscene v2.0.0-beta1 Released"
 date: 2014-03-22 18:04:51 -0500
 comments: true
-categories: 
+categories:
 ---
 
 Proscene v2.0.0-beta1 is out. Download it [here](https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.1/proscene-2.0.0-beta.1.zip) 
