@@ -57,6 +57,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 blog_index_asides: [asides/recent_posts.html]
 post_asides: [asides/recent_posts.html]
 page_asides: [asides/recent_posts.html, asides/github.html]
+# page_asides: [asides/recent_posts.html, asides/github.html, 'custom/asides/about.html', 'custom/asides/lastfm.html']
 
 # ----------------------- #
 #   3rd Party Settings    #
@@ -98,3 +99,8 @@ google_analytics_tracking_id: UA-45867702-1
 
 # Facebook Like
 facebook_like: false
+
+#Last.fm
+lastfm_apikey: 7d19c9c93a410bd06f13484751d59901
+lastfm_user: nakednous
+lastfm_count: 10

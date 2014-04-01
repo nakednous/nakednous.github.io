@@ -31,9 +31,6 @@
                 <li {% if page.navbar == 'RemixLab' %}class="active"{% endif %}>
                     <a href="{{ root_url }}/remixlab.html">RemixLab</a>
                 </li>
-                <li {% if page.navbar == 'VisualComputing' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/visualcomputing.html">VisualComputing</a>
-                </li>
                 <!--new item, about
                 <li {% if page.navbar == 'About' %}class="active"{% endif %}>
 		    <a href="{{ root_url }}about.html" title="About">
@@ -50,7 +47,7 @@
                 </li>
                 <!--new item, about-->
                 <li>
-                    <a class="about" href="{{ root_url }}/about" title="About">
+                    <a class="about" href="{{ root_url }}about.html" title="About">
                         <span class="glyphicon glyphicon-info-sign"></span>
                     </a>
                 </li>

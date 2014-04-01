@@ -11,7 +11,7 @@ and extract it to your sketchbook `libraries` folder (automatic importing *Prosc
 
 The new API has been thoroughly reviewed and documented and may be considered frozen (unless something unexpected requiring a fix happens).
 Check it out [here](http://otrolado.info/prosceneApi/). We are greatful to [Jacques Maire](http://www.alcys.com/) for contributing the new Proscene logo
-code which is [torus solenoid](http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml).
+code which is a [torus solenoid](http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml).
 
 The new library architecture comprises the following packages:
 
