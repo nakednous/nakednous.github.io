@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Proscene v2.0.0-beta1 Released - Jean Pierre Charalambos</title>
+  <title>Dandelion matrices handling - Jean Pierre Charalambos</title>
   <meta name="author" content="Jean Pierre Charalambos">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released">
+  <link rel="canonical" href="http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Jean Pierre Charalambos" type="application/atom+xml">
 
@@ -140,55 +140,50 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-23T14:55:28-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
         
       </p>
     
     
     <h1 class="entry-title">
-        Proscene v2.0.0-beta1 Released
+        Dandelion Matrices Handling
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix"><p>Proscene v2.0.0-beta1 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.1/proscene-2.0.0-beta.1.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+<div class="entry-content clearfix"><p>Any third party framework willing to use 
+<a href="https://github.com/remixlab/dandelion">Dandelion</a> should at least:</p>
 
-<p>The new API has been thoroughly reviewed and documented and may be considered frozen (unless something unexpected requiring a fix happens).
-Check it out <a href="http://otrolado.info/prosceneApi/">here</a>. We are greatful to <a href="http://www.alcys.com/">Jacques Maire</a> for contributing the new Proscene logo
-code which is a <a href="http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml">torus solenoid</a>.</p>
+<ol>
+  <li>Implement visual hints, such as the displaying of the axes and the grid.</li>
+  <li>Define how transformation matrices should be handled.</li>
+</ol>
 
-<p>The new library architecture comprises the following packages:</p>
+<p>This post describe how these two tasks are carried out in ProScene2, allowing
+Processing to take full advantage of the Dandelion framework.</p>
 
-<h2 id="fpstiminghttpsgithubcomremixlabfpstimingtree"><a href="https://github.com/remixlab/fpstiming_tree">FPSTiming</a></h2>
+<h1 id="visual-hints-in-proscene2">Visual hints in Proscene2</h1>
 
-<p>A single-threaded <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html">timing handler</a> providing timers and animators.
-The package may be run stand-alone and it’s provided in its <a href="https://github.com/remixlab/fpstiming_tree">own tree</a>.</p>
+<p>All Dandelion visual hints are defined by the VisualHintable interface. Since 
+some of the ProScene2 splits the implementation </p>
 
-<h2 id="biashttpsgithubcomremixlabbiastree"><a href="https://github.com/remixlab/bias_tree">BIAS</a></h2>
+<p>provides P5Drawing2D P5Drawing3D</p>
 
-<p>An <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/InputHandler.html">input handler</a> providing means to translate event input data into high-level
-user-defined actions. The package represents the new Proscene event back-end, but it may be run stand-alone and it’s provided in its
-<a href="https://github.com/remixlab/bias_tree">own tree</a> too.</p>
+<h1 id="transformations-matrices">Transformations matrices</h1>
 
-<h2 id="dandelionhttpsgithubcomremixlabdandeliontree"><a href="https://github.com/remixlab/dandelion_tree">Dandelion</a></h2>
+<p>Connect dandelion to other framworks such as Processing.</p>
 
-<p>Package implementing all sorts of (motion) <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.DandelionAction.html">actions</a> on Frames
-(coordinate systems). Dandelion depends on both, FPSTiming and BIAS. <!--- next version should mention it is language agnostic and the JS approach... --></p>
+<h1 id="approach">Approach</h1>
 
-<h2 id="proscene">Proscene</h2>
+<h1 id="examples">Examples</h1>
 
-<p>Package holding a single class (the <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene</a>) which represents an interface between Dandelion
-and Processing.</p>
-
-<p>Although the (high-level) <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene API</a> has been re-factored, Proscene1.x users may stick to it
-and feel at home. Most of the examples ported from Proscene1.x look even simpler now. They all have been re-organized reflecting the new structure to
-attract those willing to digg into the inners of the new architecture.</p>
-
-<p>Expect for one or two more betas before the final release. We plan to improve the docs, particularly that of the examples. Please report any bug or issue you
-may find and help us make the upcoming proscene2 as polished as possible.</p>
+<ol>
+  <li>Java2D</li>
+  <li>Target application has its own matrix stack</li>
+  <li>Target application misses matrix stack</li>
+</ol>
 </div>
 
 
@@ -212,15 +207,22 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-23T14:55:28-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
           
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dandelion/'>dandelion,</a>, <a class='category' href='/blog/categories/proscene/'>proscene</a>
+  
+</span>
 
 
         </p>
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" data-via="" data-counturl="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling/" data-via="" data-counturl="http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling/" >Tweet</a>
   
   
   
@@ -230,10 +232,10 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/" title="Previous Post: Proscene v2.0.0-alpha3 Released">&laquo; Proscene v2.0.0-alpha3 Released</a></li>
+            <li class="previous"><a href="/blog/2013/11/04/experiments/" title="Previous Post: Experiments">&laquo; Experiments</a></li>
             
             
-            <li class="next"><a href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/" title="Next Post: Proscene v2.0.0-beta2 Released">Proscene v2.0.0-beta2 Released &raquo;</a></li>
+            <li class="next"><a href="/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/" title="Next Post: Proscene v2.0.0-alpha2 released">Proscene v2.0.0-alpha2 released &raquo;</a></li>
             
           </ul>
         
@@ -260,13 +262,13 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
     
     <a class="list-group-item " href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/">Proscene v2.0.0-beta2 Released</a>
     
-    <a class="list-group-item active" href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
+    <a class="list-group-item " href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
     
     <a class="list-group-item " href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/">Proscene v2.0.0-alpha3 Released</a>
     
     <a class="list-group-item " href="/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/">Proscene v2.0.0-alpha2 Released</a>
     
-    <a class="list-group-item " href="/blog/2013/11/23/dandelion-matrices-handling/">Dandelion Matrices Handling</a>
+    <a class="list-group-item active" href="/blog/2013/11/23/dandelion-matrices-handling/">Dandelion Matrices Handling</a>
     
   </div>
 </section>
@@ -299,8 +301,8 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
-        var disqus_url = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
+        var disqus_identifier = 'http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling/';
+        var disqus_url = 'http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling/';
         var disqus_script = 'embed.js';
       
     (function () {

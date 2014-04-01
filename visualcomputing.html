@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Proscene v2.0.0-beta1 Released - Jean Pierre Charalambos</title>
+  <title>visualcomputing - Jean Pierre Charalambos</title>
   <meta name="author" content="Jean Pierre Charalambos">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released">
+  <link rel="canonical" href="http://nakednous.github.io/visualcomputing.html">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Jean Pierre Charalambos" type="application/atom+xml">
 
@@ -58,7 +58,7 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li >
                     <a href="/">Blog</a>
                 </li>
                 <li >
@@ -122,136 +122,48 @@
         <div id="content">
           <div class="row">
   <div class="page-content col-md-9">
-    <article class="hentry" role="article">
+    <article role="article">
       
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
-        
-      </p>
-    
-    
-    <h1 class="entry-title">
-        Proscene v2.0.0-beta1 Released
-        
-    </h1>
-    
-  </header>
-
-
-<div class="entry-content clearfix"><p>Proscene v2.0.0-beta1 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.1/proscene-2.0.0-beta.1.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
-
-<p>The new API has been thoroughly reviewed and documented and may be considered frozen (unless something unexpected requiring a fix happens).
-Check it out <a href="http://otrolado.info/prosceneApi/">here</a>. We are greatful to <a href="http://www.alcys.com/">Jacques Maire</a> for contributing the new Proscene logo
-code which is a <a href="http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml">torus solenoid</a>.</p>
-
-<p>The new library architecture comprises the following packages:</p>
-
-<h2 id="fpstiminghttpsgithubcomremixlabfpstimingtree"><a href="https://github.com/remixlab/fpstiming_tree">FPSTiming</a></h2>
-
-<p>A single-threaded <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html">timing handler</a> providing timers and animators.
-The package may be run stand-alone and it’s provided in its <a href="https://github.com/remixlab/fpstiming_tree">own tree</a>.</p>
-
-<h2 id="biashttpsgithubcomremixlabbiastree"><a href="https://github.com/remixlab/bias_tree">BIAS</a></h2>
-
-<p>An <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/InputHandler.html">input handler</a> providing means to translate event input data into high-level
-user-defined actions. The package represents the new Proscene event back-end, but it may be run stand-alone and it’s provided in its
-<a href="https://github.com/remixlab/bias_tree">own tree</a> too.</p>
-
-<h2 id="dandelionhttpsgithubcomremixlabdandeliontree"><a href="https://github.com/remixlab/dandelion_tree">Dandelion</a></h2>
-
-<p>Package implementing all sorts of (motion) <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.DandelionAction.html">actions</a> on Frames
-(coordinate systems). Dandelion depends on both, FPSTiming and BIAS. <!--- next version should mention it is language agnostic and the JS approach... --></p>
-
-<h2 id="proscene">Proscene</h2>
-
-<p>Package holding a single class (the <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene</a>) which represents an interface between Dandelion
-and Processing.</p>
-
-<p>Although the (high-level) <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene API</a> has been re-factored, Proscene1.x users may stick to it
-and feel at home. Most of the examples ported from Proscene1.x look even simpler now. They all have been re-organized reflecting the new structure to
-attract those willing to digg into the inners of the new architecture.</p>
-
-<p>Expect for one or two more betas before the final release. We plan to improve the docs, particularly that of the examples. Please report any bug or issue you
-may find and help us make the upcoming proscene2 as polished as possible.</p>
-</div>
-
-
-      <footer>
-        <p class="meta text-muted">
+        <header class="page-header">
           
+          
+            <h1 class="entry-title">
+              Visualcomputing
+              
+            </h1>
+          
+        </header>
+      
+      <div class="entry-content">
+        <p>We have begun building a set of <a href="https://github.com/hakimel/reveal.js">reveal-based</a> presentations for the <em>Visual Computing</em> course
+given at <a href="http://www.disi.unal.edu.co/">National University of Colombia</a>.</p>
+
+<p>The presentations will be added <a href="https://github.com/VisualComputing/">here</a> as soon as they’re ready, so please stay tuned…</p>
+
+      </div>
+      
+        <footer>
+          
+          
+            <div class="sharing">
   
-
-<span class="glyphicon glyphicon-user"></span> <span class="byline author vcard">Posted by <span class="fn">Jean Pierre Charalambos</span></span>
-
-          
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
-          
-
-
-        </p>
-        
-          <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" data-via="" data-counturl="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/visualcomputing.html" data-via="" data-counturl="http://nakednous.github.io/visualcomputing.html" >Tweet</a>
   
   
   
 </div>
 
-        
-        
-          <ul class="meta text-muted pager">
-            
-            <li class="previous"><a href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/" title="Previous Post: Proscene v2.0.0-alpha3 Released">&laquo; Proscene v2.0.0-alpha3 Released</a></li>
-            
-            
-            <li class="next"><a href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/" title="Next Post: Proscene v2.0.0-beta2 Released">Proscene v2.0.0-beta2 Released &raquo;</a></li>
-            
-          </ul>
-        
-      </footer>
+          
+        </footer>
+      
     </article>
-    
-      <section>
-        <h1>Comments</h1>
-        <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-      </section>
     
   </div>
 
   
-  <aside class="sidebar col-md-3">
-    
-      <section class="panel panel-default">
+    <aside class="sidebar col-md-3">
+      
+        <section class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">Recent Posts</h3>
   </div>
@@ -260,7 +172,7 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
     
     <a class="list-group-item " href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/">Proscene v2.0.0-beta2 Released</a>
     
-    <a class="list-group-item active" href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
+    <a class="list-group-item " href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
     
     <a class="list-group-item " href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/">Proscene v2.0.0-alpha3 Released</a>
     
@@ -271,8 +183,42 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
   </div>
 </section>
 
-    
-  </aside>
+<section class="panel panel-default clearfix">
+  <div class="panel-heading">
+      <h3 class="panel-title">GitHub Repos</h3>
+  </div>
+  <div class="list-group" id="gh_repos">
+    <p class="loading">Status updating...</p>
+  </div>
+  
+    <div class="gh-profile-link pull-right text-muted">
+      <a href="https://github.com/nakednous">@nakednous</a> on GitHub
+    </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nakednous',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+      
+    </aside>
   
 </div>
 
@@ -293,22 +239,6 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
     <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/javascripts/modernizr-2.0.js"></script>
 
-
-<script type="text/javascript">
-      var disqus_shortname = 'nakednousgithubio';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
-        var disqus_url = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 

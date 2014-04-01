@@ -4,7 +4,7 @@
   <title><![CDATA[Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-03-24T20:53:34-05:00</updated>
+  <updated>2014-04-01T18:12:11-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -104,6 +104,77 @@ I hope to give more details here soon.</p>
 
 <p>Currently, we are performing more experiments to decide what experimental stuff will make it into the upcoming cycle. We plan to release a pair or
 so of more alphas with our results before entering beta stage.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dandelion matrices handling]]></title>
+    <link href="http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling/"/>
+    <updated>2013-11-23T14:55:28-05:00</updated>
+    <id>http://nakednous.github.io/blog/2013/11/23/dandelion-matrices-handling</id>
+    <content type="html"><![CDATA[<p>Any third party framework willing to use 
+<a href="https://github.com/remixlab/dandelion">Dandelion</a> should at least:</p>
+
+<ol>
+  <li>Implement visual hints, such as the displaying of the axes and the grid.</li>
+  <li>Define how transformation matrices should be handled.</li>
+</ol>
+
+<p>This post describe how these two tasks are carried out in ProScene2, allowing
+Processing to take full advantage of the Dandelion framework.</p>
+
+<h1 id="visual-hints-in-proscene2">Visual hints in Proscene2</h1>
+
+<p>All Dandelion visual hints are defined by the VisualHintable interface. Since 
+some of the ProScene2 splits the implementation </p>
+
+<p>provides P5Drawing2D P5Drawing3D</p>
+
+<h1 id="transformations-matrices">Transformations matrices</h1>
+
+<p>Connect dandelion to other framworks such as Processing.</p>
+
+<h1 id="approach">Approach</h1>
+
+<h1 id="examples">Examples</h1>
+
+<ol>
+  <li>Java2D</li>
+  <li>Target application has its own matrix stack</li>
+  <li>Target application misses matrix stack</li>
+</ol>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Experiments]]></title>
+    <link href="http://nakednous.github.io/blog/2013/11/04/experiments/"/>
+    <updated>2013-11-04T15:23:00-05:00</updated>
+    <id>http://nakednous.github.io/blog/2013/11/04/experiments</id>
+    <content type="html"><![CDATA[<h1 id="code">Code</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Discover if a number is prime</span><a href="http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/">Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class="line">  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class="line">    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class="line">  <span class="k">end</span>
+</span><span class="line"><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h1 id="latex-formula">Latex Formula</h1>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]&gt;</script>
 ]]></content>
   </entry>
   

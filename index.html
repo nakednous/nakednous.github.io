@@ -62,11 +62,31 @@
                     <a href="/">Blog</a>
                 </li>
                 <li >
-                    <a href="/projects.html">Projects</a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proscene2 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="/projects/bias">BIAS</a>
+                        <a href="/projects/fpstiming">FPSTiming</a>
+                        <a href="/projects/dandelion">Dandelion</a>
+                        <a href="/projects/proscene">ProScene</a>
+                      </li>
+                    </ul>
+                </li>
+                <li >
+                    <a href="/github.html">Github</a>
                 </li>
                 <li >
                     <a href="/remixlab.html">RemixLab</a>
                 </li>
+                <li >
+                    <a href="/visualcomputing.html">VisualComputing</a>
+                </li>
+                <!--new item, about
+                <li >
+		    <a href="about.html" title="About">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </a>
+                end about-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -75,6 +95,13 @@
                         <img class="hidden-xs" src="/images/rss.png" alt="RSS">
                     </a>
                 </li>
+                <!--new item, about-->
+                <li>
+                    <a class="about" href="/about" title="About">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </a>
+                </li>
+                <!--end about-->
                 
             </ul>
             
@@ -323,6 +350,133 @@ so of more alphas with our results before entering beta stage.</p>
 
 
 
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-23T14:55:28-05:00" pubdate data-updated="true">Nov 23<span>rd</span>, 2013</time>
+        
+      </p>
+    
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/23/dandelion-matrices-handling/">Dandelion Matrices Handling</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content clearfix"><p>Any third party framework willing to use 
+<a href="https://github.com/remixlab/dandelion">Dandelion</a> should at least:</p>
+
+<ol>
+  <li>Implement visual hints, such as the displaying of the axes and the grid.</li>
+  <li>Define how transformation matrices should be handled.</li>
+</ol>
+
+<p>This post describe how these two tasks are carried out in ProScene2, allowing
+Processing to take full advantage of the Dandelion framework.</p>
+
+<h1 id="visual-hints-in-proscene2">Visual hints in Proscene2</h1>
+
+<p>All Dandelion visual hints are defined by the VisualHintable interface. Since 
+some of the ProScene2 splits the implementation </p>
+
+<p>provides P5Drawing2D P5Drawing3D</p>
+
+<h1 id="transformations-matrices">Transformations matrices</h1>
+
+<p>Connect dandelion to other framworks such as Processing.</p>
+
+<h1 id="approach">Approach</h1>
+
+<h1 id="examples">Examples</h1>
+
+<ol>
+  <li>Java2D</li>
+  <li>Target application has its own matrix stack</li>
+  <li>Target application misses matrix stack</li>
+</ol>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-04T15:23:00-05:00" pubdate data-updated="true">Nov 4<span>th</span>, 2013</time>
+        
+      </p>
+    
+    
+      <h1 class="entry-title"><a href="/blog/2013/11/04/experiments/">Experiments</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content clearfix"><h1 id="code">Code</h1>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Discover if a number is prime</span><a href="http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/">Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class="line">  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class="line">    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class="line">  <span class="k">end</span>
+</span><span class="line"><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h1 id="latex-formula">Latex Formula</h1>
+
+<script type="math/tex; mode=display">% <![CDATA[
+
+\begin{align}
+\mbox{Union: } & A\cup B = \{x\mid x\in A \mbox{ or } x\in B\} \\
+\mbox{Concatenation: } & A\circ B  = \{xy\mid x\in A \mbox{ and } y\in B\} \\
+\mbox{Star: } & A^\star  = \{x_1x_2\ldots x_k \mid  k\geq 0 \mbox{ and each } x_i\in A\} \\
+\end{align}
+ %]]></script>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-10-26T15:23:00-05:00" pubdate data-updated="true">Oct 26<span>th</span>, 2013</time>
         
       </p>
@@ -410,7 +564,7 @@ so of more alphas with our results before entering beta stage.</p>
     
     <a class="list-group-item " href="/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/">Proscene v2.0.0-alpha2 Released</a>
     
-    <a class="list-group-item " href="/blog/2013/10/26/proscene-v2-dot-0-0-alpha1-released/">Proscene v2.0.0-alpha1 Released</a>
+    <a class="list-group-item " href="/blog/2013/11/23/dandelion-matrices-handling/">Dandelion Matrices Handling</a>
     
   </div>
 </section>

@@ -4,10 +4,10 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Category: proscene, - Jean Pierre Charalambos</title>
+  <title>FPSTiming - Jean Pierre Charalambos</title>
   <meta name="author" content="Jean Pierre Charalambos">
 
-  <meta name="description" content="Category: proscene,">
+  
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nakednous.github.ioblog/categories/proscene">
+  <link rel="canonical" href="http://nakednous.github.io/projects/fpstiming">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Jean Pierre Charalambos" type="application/atom+xml">
 
@@ -128,55 +128,128 @@
           
           
             <h1 class="entry-title">
-              Category: Proscene,
+              FPSTiming
               
             </h1>
           
         </header>
       
       <div class="entry-content">
-        <div id="blog-archives" class="category">
+        <ul id="markdown-toc">
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#hacking">Hacking</a>    <ul>
+      <li><a href="#initial-setup">Initial setup</a></li>
+      <li><a href="#read-write-access-setup-only-for-developers-who-have-been-granted-read-write-access-to-the-trees">Read-write access setup (only for developers who have been granted read-write access to the trees)</a></li>
+    </ul>
+  </li>
+</ul>
 
-
-
-  
-  <h2>2013</h2>
-
-<article class="page-header">
-  
-<h1><a href="/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/">Proscene v2.0.0-alpha2 released</a></h1>
-<p class="meta text-muted">
-  
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-11-26T17:13:29-05:00" pubdate data-updated="true">Nov 26<span>th</span>, 2013</time>
-  
-
-<span class="glyphicon glyphicon-tags"></span>&nbsp;
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/dandelion/'>dandelion</a>, <a class='category' href='/blog/categories/proscene/'>proscene,</a>
-  
-</span>
-
-
+<p>
+<script src="/javascripts/processing.min.js"></script> 
+<canvas data-processing-sources="/projects/fpstiming/arch.pde" />
+<div class="example-links">
+    Figure 1. Software Architecture
+</div>
 </p>
 
-</article>
+<h1 id="introduction">Introduction</h1>
 
-</div>
+<p>A small footprint package implementing single threaded timers by taking the application frame rate as a clock. Each application using <strong>FPSTiming</strong>
+should simply:</p>
+
+<ol>
+  <li>Instantiate a single <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html">TimingHandler</a>.</li>
+  <li>Schedule some tasks to be executed periodically, see <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html#registerTask(remixlab.fpstiming.TimingTask)">registerTask(TimingTask)</a>.</li>
+  <li>Register some animation objects <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html#registerAnimator(remixlab.fpstiming.Animator)">registerAnimator(Animator)</a>.</li>
+  <li>Call <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html#handle()">handle()</a> from within the application main event loop.</li>
+</ol>
+
+<h1 id="hacking">Hacking</h1>
+
+<p>The package is developed as a <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt">git subtree</a>
+(see also <a href="http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/">“here”</a>). It should thus be made part of a
+bigger (container) project (see Figure 1).</p>
+
+<h2 id="initial-setup">Initial setup</h2>
+
+<p>First (and only) time setup. Here <code>&lt;my_repo&gt;</code> is the project repo where you plan to include the <strong>FPSTiming</strong> tree.</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git clone &lt;my_repo&gt;
+</span><span class="line"><span class="nb">cd</span> &lt;my_repo&gt;
+</span><span class="line">git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
+</span><span class="line">git subtree add --prefix src/remixlab/fpstiming fpstiming master --squash
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>Now <code>git push</code> will push the tree into your remote repo. From now on you will be able to use your repo
+as any other basic git repo:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#clone it:</span>
+</span><span class="line">git clone &lt;my_repo&gt;
+</span><span class="line"><span class="nb">cd</span> &lt;my_repo&gt;
+</span><span class="line"><span class="c">#If you want to submit changes to some the trees please</span>
+</span><span class="line"><span class="c">#refer to: https://help.github.com/articles/using-pull-requests</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h2 id="read-write-access-setup-only-for-developers-who-have-been-granted-read-write-access-to-the-trees">Read-write access setup (only for developers who have been granted read-write access to the trees)</h2>
+
+<p>(do the initial setup above first)</p>
+
+<p>Clone the repo and add the remotes:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git clone &lt;my_repo&gt;
+</span><span class="line"><span class="nb">cd</span> &lt;my_repo&gt;
+</span><span class="line">git remote add -f fpstiming https://github.com/remixlab/fpstiming_tree.git
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>To update the <strong>FPSTiming</strong> subtree:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#fetching command:</span>
+</span><span class="line">git fetch fpstiming master
+</span><span class="line">git subtree pull --prefix src/remixlab/fpstiming fpstiming master --squash
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>To contribute to the main project:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git push
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>To contribute to the <strong>FPSTiming</strong> subtree:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git subtree push --prefix<span class="o">=</span>src/remixlab/fpstiming fpstiming master
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
       </div>
+      
+        <footer>
+          
+          
+            <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/projects/fpstiming/index.html" data-via="" data-counturl="http://nakednous.github.io/projects/fpstiming/index.html" >Tweet</a>
+  
+  
+  
+</div>
+
+          
+        </footer>
       
     </article>
     
@@ -261,19 +334,6 @@
     <script src="/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/javascripts/modernizr-2.0.js"></script>
 
-
-<script type="text/javascript">
-      var disqus_shortname = 'nakednousgithubio';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 
