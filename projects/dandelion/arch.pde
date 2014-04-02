@@ -6,10 +6,10 @@ void setup() {
   size(500,290);
   background(125);
   fill(255);
-  proscene = new MyRect(10,10,480,270,"ProScene2","http://otrolado.info/projects/proscene");
-  dandelion = new MyRect(30,50,430,210,"Dandelion","http://otrolado.info/projects/dandelion");
-  fpstiming = new MyRect(250,90,180,150,"FPSTiming","http://otrolado.info/projects/fpstiming");
-  bias = new MyRect(50,90,180,150,"BIAS","http://otrolado.info/projects/bias");
+  proscene = new MyRect(10,10,480,270,"ProScene2","http://nakednous.github.io/projects/proscene");
+  dandelion = new MyRect(30,50,430,210,"Dandelion","http://nakednous.github.io/projects/dandelion");
+  fpstiming = new MyRect(250,90,180,150,"FPSTiming","http://nakednous.github.io/projects/fpstiming");
+  bias = new MyRect(50,90,180,150,"BIAS","http://nakednous.github.io/projects/bias");
   util = new MyRect(70,130,100,80,"Util","https://github.com/remixlab/util_tree");
   
   //String[] fontList = PFont.list();
