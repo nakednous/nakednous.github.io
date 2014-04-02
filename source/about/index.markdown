@@ -19,7 +19,7 @@ mainly computer-based. I enjoy literature, mainly science fiction. I like playin
 
 # Hacking procedure
 
-* Install the source [nakednous/nakednous.github.io](https://github.com/nakednous/nakednous.github.io/tree/source)
+Detailed instructions found [here](https://github.com/nakednous/nakednous.github.io/blob/source/README.markdown).
 
 # License
 
