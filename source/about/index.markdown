@@ -24,4 +24,4 @@ Detailed instructions found [here](https://github.com/nakednous/nakednous.github
 # License
 
 Sources relased under [MIT license](http://opensource.org/licenses/MIT).
-Content released under [http://opensource.org/licenses/MIT](http://creativecommons.org/licenses/by-sa/4.0/).
+Content released under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/).
