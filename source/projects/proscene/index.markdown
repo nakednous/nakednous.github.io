@@ -21,7 +21,7 @@ footer: true
 
 A 2D or 3D interactive [Processing](http://processing.org) [Scene](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html).
 **ProScene** (pronounced similar as the Czech word **"prosím"** which means **"please"**) provides an interface
-between [Dandelion](http://otrolado.info/projects/dandelion) and [Processing](http://processing.org) (Figure 1 depicts the software architecture).
+between [Dandelion](http://nakednous.github.io/projects/dandelion) and [Processing](http://processing.org) (Figure 1 depicts the software architecture).
 
 **ProScene** provides seemless integration with **Processing**: its API has been designed to fit that of **Processing** and its implementation has been optimized to work along side with it. It suppports all major **Processing** flavours: Desktop, JS, and Android.
 
