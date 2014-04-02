@@ -20,7 +20,7 @@ footer: true
 # Introduction
 
 A package providing interactivity to [Frames](http://otrolado.info/prosceneApi/remixlab/dandelion/core/Frame.html)
-(coordinate systems) mainly by allowing to select them and to control their motion. Dandelion supports different interaction mechanisms, including the standard
+(coordinate systems) allowing picking and motion control of objects. Dandelion supports different interaction mechanisms, including the standard
 mouse and keyboard, but it is not particularly tie to any of them, i.e., it's *device agnostic* by design. Frames may be attached
 not only to user-space objects (thus controlling their motion), but to the [Eye](http://otrolado.info/prosceneApi/remixlab/dandelion/core/Eye.html) to control
 the [Scene](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html)

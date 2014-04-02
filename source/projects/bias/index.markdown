@@ -20,7 +20,7 @@ footer: true
 # Introduction
 
 **BIAS**, (**B**)ogus-(**I**)nput (**A**)ction-(**S**)elector package. A package defining an interface between application event input
-data (including but not limited to hardware input) and user-defined actions based on that input. The idea being that
+data (including but not limited to hardware input) and user-defined actions. The idea being that
 various sorts of input data, mainly that gathered from an user-interaction (e.g., a mouse button being pressed and
 dragged), may be modeled and reduced into high-level events. Those "bogus" events are then taken as input to
 implement user-defined actions on application objects (e.g., push that button or select that geometry on the screen
