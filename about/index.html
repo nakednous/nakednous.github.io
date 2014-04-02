@@ -126,21 +126,6 @@
       
         <header class="page-header">
           
-            <p class="meta text-muted text-uppercase">
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-31T17:59:00-05:00" pubdate data-updated="true">Mar 31<span>st</span>, 2014</time></p>
-          
           
             <h1 class="entry-title">
               About
@@ -150,196 +135,34 @@
         </header>
       
       <div class="entry-content">
-        <p>I’m currently Associate Professor at <a href="www.unal.edu.co">National University of Colombia</a>. I’m interested in all sorts of interactions,
+        <h1 id="bio">Bio</h1>
+
+<p>I’m currently Associate Professor at <a href="www.unal.edu.co">National University of Colombia</a>. I’m interested in all sorts of interactions,
 mainly computer-based. I enjoy literature, mainly science fiction. I like playing table tennis, chess and practicing yoga.</p>
 
-<p>Welcome to the source of my personal website powered by [octopress] (http://octopress.org/) using the
-<a href="http://kaworu.github.io/octopress/">octostrap3</a> theme.</p>
+<h1 id="about-this-site">About this site</h1>
 
-<p>It’s pure fun to play with and should be super-easy to hack. Read on to learn how…</p>
+<ul>
+  <li>Powered by <a href="http://octopress.org/">octopress</a> using the <a href="http://kaworu.github.io/octopress/">octostrap3</a> theme.</li>
+  <li>Source on github: <a href="https://github.com/nakednous/nakednous.github.io/tree/source">nakednous/nakednous.github.io</a>.</li>
+  <li>Please report <a href="https://github.com/nakednous/nakednous.github.io/issues">issues or give feedback</a>.</li>
+</ul>
 
 <h1 id="hacking-procedure">Hacking procedure</h1>
 
 <ul>
-  <li>Install the source</li>
+  <li>Install the source <a href="https://github.com/nakednous/nakednous.github.io/tree/source">nakednous/nakednous.github.io</a></li>
 </ul>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git clone https://github.com/nakednous/nakednous.github.io.git
-</span><span class="line"><span class="nb">cd </span>nakednous.github.io
-</span></code></pre></td></tr></table></div></figure></notextile></div>
+<h1 id="license">License</h1>
 
-<ul>
-  <li>Setup deployment (to github pages)</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-<span class="line-number">7</span>
-<span class="line-number">8</span>
-<span class="line-number">9</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#We use a two-branching architecture (http://octopress.org/docs/deploying/github/)</span>
-</span><span class="line">git checkout <span class="nb">source</span>
-</span><span class="line">git branch -v
-</span><span class="line"><span class="c">#Tip found here: http://weishi.github.io/blog/2013/07/24/setup-an-existing-octopress-repository-after-git-clone/</span>
-</span><span class="line">mkdir _deploy
-</span><span class="line"><span class="nb">cd </span>_deploy
-</span><span class="line">git init
-</span><span class="line">git remote add -t master -f origin https://github.com/nakednous/nakednous.github.io.git
-</span><span class="line"><span class="nb">cd</span> ..
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>(Optionally) Update to upstream</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git remote add octopress https://github.com/imathis/octopress.git
-</span><span class="line">git remote -v
-</span><span class="line">git pull octopress master
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>Add the git submodule containing the theme</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git submodule init
-</span><span class="line">git submodule update
-</span><span class="line"><span class="nb">cd</span> .themes/octostrap3
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>(Optionally) Update the theme to upstream</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git remote -v
-</span><span class="line">git remote add octostrap3 https://github.com/kAworu/octostrap3.git
-</span><span class="line">git remote -v
-</span><span class="line">git pull octostrap3 master
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>Complete the installation</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-<span class="line-number">6</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="nb">cd</span> ../..
-</span><span class="line">gem install bundler
-</span><span class="line"><span class="c">#edit your .bashrc to make bundler install gems locally (see: https://wiki.archlinux.org/index.php/ruby#Bundler)</span>
-</span><span class="line"><span class="c">#now install the gems locally</span>
-</span><span class="line">bundle install
-</span><span class="line"><span class="c">#edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>Install the octostrap3 theme</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-<span class="line-number">4</span>
-<span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#following line would install default theme instead.</span>
-</span><span class="line"><span class="c">#rake install</span>
-</span><span class="line">rake <span class="s1">&#39;install[octostrap3]&#39;</span>
-</span><span class="line">rake generate
-</span><span class="line">rake preview
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>To post and render the website to localhost</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">rake new_post<span class="o">[</span><span class="s2">&quot;Proscene v2.0.0-alpha3 Released&quot;</span><span class="o">]</span>
-</span><span class="line">rake generate
-</span><span class="line">rake preview
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<ul>
-  <li>Deploy (to github pages)</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">rake deploy
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<!---
-* If `rake deploy` fails pushing the generated source to the master branch then
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>git push -f --set-upstream origin master
-</span></code></pre></td></tr></table></div></figure>
-
-&#8211;>
-
-<ul>
-  <li>Commit and push the modified sources</li>
-</ul>
-
-<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-<span class="line-number">3</span>
-</pre></td><td class="code"><pre><code class="sh"><span class="line">git add .
-</span><span class="line">git commit -m <span class="s1">&#39;your message&#39;</span>
-</span><span class="line">git push origin <span class="nb">source</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-
-<h2 id="license">License</h2>
-<p>(The MIT License)</p>
-
-<p>Copyright © 2009-2013 Brandon Mathis</p>
-
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
-
-<p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
-
-<p>THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>Sources relased under <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+Content released under <a href="http://creativecommons.org/licenses/by-sa/4.0/">http://opensource.org/licenses/MIT</a>.</p>
 
       </div>
       
         <footer>
-          <p class="meta text-muted">
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-31T17:59:00-05:00" pubdate data-updated="true">Mar 31<span>st</span>, 2014</time>
-            
-          </p>
+          
           
             <div class="sharing">
   
