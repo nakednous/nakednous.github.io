@@ -68,7 +68,7 @@ void updateHover() {
     hover = proscene;
 }
 
-void mouseClicked() {
+void mousePressed() {
   if( hover != null )
     if( hover != proscene )
       link(hover.url);
