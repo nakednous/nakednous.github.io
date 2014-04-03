@@ -68,7 +68,7 @@ void updateHover() {
     hover = proscene;
 }
 
-void mousePressed() {
+void mouseClicked() {
   if( hover != null )
     if( hover != fpstiming )
       link(hover.url);
