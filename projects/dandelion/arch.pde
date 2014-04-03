@@ -67,7 +67,7 @@ void updateHover() {
     hover = proscene;
 }
 
-void mouseClicked() {
+void mousePressed() {
   if( hover != null )
     if( hover != dandelion )
       link(hover.url);
