@@ -187,8 +187,8 @@ together according to their DOFs in the following sub-sets:</p>
 
 <p>Sub-group constitutions with their individual action descriptions are available <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.html">here</a>.</p>
 
-<p>This action-driven design allows to easily support all sorts of interaction mechanisms, such as when adding an <a href="http://en.wikipedia.org/wiki/Human_interface_device">HID</a>, without having the need to
-re-implement any of the supported actions.</p>
+<p>This action-driven design allows to easily support all sorts of interaction mechanisms, such as when adding an <a href="http://en.wikipedia.org/wiki/Human_interface_device">HID</a>,
+without having the need to re-implement any of the supported actions.</p>
 
 <h1 id="usage">Usage</h1>
 
@@ -209,14 +209,13 @@ or <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractSce
 
 <p>finally, implement all the abstract methods which mainly deals with how the visual hints are drawn.</p>
 
-<p>For an example, please refer to <a href="http://nakednous.github.io/projects/proscene">ProScene</a> which provides
-a <a href="http://processing.org/">Processing</a> implementation of Dandelion.</p>
+<p>For an example, please refer to <a href="http://nakednous.github.io/projects/proscene">ProScene</a> which provides a <a href="http://processing.org/">Processing</a> implementation of Dandelion.</p>
 
 <h1 id="hacking">Hacking</h1>
 
 <p>The package is developed as a <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt">git subtree</a>
 (see also <a href="http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/">“here”</a>). It should thus be made part of a
-bigger (container) project (like <a href="http://nakednous.github.io/projects/proscene">ProScene</a>, see Figure 1 ).
+bigger (container) project (like <a href="http://nakednous.github.io/projects/proscene">ProScene</a>, see Figure 1).
 The package dependencies are <a href="http://nakednous.github.io/projects/bias">BIAS</a>, <a href="http://nakednous.github.io/projects/fpstiming">FPSTiming</a>
 and <a href="https://github.com/remixlab/util_tree">util</a> (which
 provides <code>hashCode()</code>,  <code>equals()</code>  and  <code>clone()</code> Java implementations compatible with <a href="http://www.gwtproject.org/">gwt</a>).
@@ -327,6 +326,12 @@ as any other basic git repo:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class="sh"><span class="line">git push
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>To contribute to the <strong>DANDELION</strong> subtree:</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="sh"><span class="line">git subtree push --prefix<span class="o">=</span>src/remixlab/dandelion dandelion master
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>To contribute to the <strong>BIAS</strong> subtree:</p>
