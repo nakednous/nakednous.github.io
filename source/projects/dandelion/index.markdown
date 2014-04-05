@@ -48,8 +48,8 @@ together according to their DOFs in the following sub-sets:
 
 Sub-group constitutions with their individual action descriptions are available [here](http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.html).
 
-This action-driven design allows to easily support all sorts of interaction mechanisms, such as when adding an [HID](http://en.wikipedia.org/wiki/Human_interface_device), without having the need to
-re-implement any of the supported actions.
+This action-driven design allows to easily support all sorts of interaction mechanisms, such as when adding an [HID](http://en.wikipedia.org/wiki/Human_interface_device),
+without having the need to re-implement any of the supported actions.
 
 # Usage
 
@@ -68,14 +68,13 @@ or [is3D()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractSce
 
 finally, implement all the abstract methods which mainly deals with how the visual hints are drawn.
 
-For an example, please refer to [ProScene](http://nakednous.github.io/projects/proscene) which provides
-a [Processing](http://processing.org/) implementation of Dandelion.
+For an example, please refer to [ProScene](http://nakednous.github.io/projects/proscene) which provides a [Processing](http://processing.org/) implementation of Dandelion.
 
 # Hacking
 
 The package is developed as a [git subtree](https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt)
 (see also ["here"](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)). It should thus be made part of a
-bigger (container) project (like [ProScene](http://nakednous.github.io/projects/proscene), see Figure 1 ).
+bigger (container) project (like [ProScene](http://nakednous.github.io/projects/proscene), see Figure 1).
 The package dependencies are [BIAS](http://nakednous.github.io/projects/bias), [FPSTiming](http://nakednous.github.io/projects/fpstiming)
 and [util](https://github.com/remixlab/util_tree) (which
 provides ```hashCode()```,  ```equals()```  and  ```clone()``` Java implementations compatible with [gwt](http://www.gwtproject.org/)).
@@ -160,6 +159,12 @@ To contribute to the main project:
 
 {% codeblock lang:sh %}
 git push
+{% endcodeblock %}
+
+To contribute to the **DANDELION** subtree:
+
+{% codeblock lang:sh %}
+git subtree push --prefix=src/remixlab/dandelion dandelion master
 {% endcodeblock %}
 
 To contribute to the **BIAS** subtree:
