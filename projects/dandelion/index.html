@@ -202,14 +202,16 @@ only if the target platform (such as Processing) provides its own matrix handlin
 to set the <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#eye()">eye()</a>, once it’s known if the
 Scene <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is2D()">is2D()</a>
 or <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is3D()">is3D()</a>.</li>
-  <li>Instantiate some <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html">agents</a> register them at the <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()">inputHandler()</a>.</li>
+  <li>Instantiate some <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html">agents</a> and register them at
+the <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()">inputHandler()</a>.</li>
   <li>Define whether or not the Scene <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#isOffscreen()">isOffscreen()</a>.</li>
   <li>Call <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#init()">init()</a> at the end of the constructor.</li>
 </ol>
 
 <p>finally, implement all the abstract methods which mainly deals with how the visual hints are drawn.</p>
 
-<p>For an example, please refer to <a href="http://nakednous.github.io/projects/proscene">ProScene</a> which provides a <a href="http://processing.org/">Processing</a> implementation of Dandelion.</p>
+<p>For an example, please refer to <a href="http://nakednous.github.io/projects/proscene">ProScene</a> which provides a <a href="http://processing.org/">Processing</a>
+implementation of Dandelion.</p>
 
 <h1 id="hacking">Hacking</h1>
 
@@ -217,8 +219,8 @@ or <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractSce
 (see also <a href="http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/">“here”</a>). It should thus be made part of a
 bigger (container) project (like <a href="http://nakednous.github.io/projects/proscene">ProScene</a>, see Figure 1).
 The package dependencies are <a href="http://nakednous.github.io/projects/bias">BIAS</a>, <a href="http://nakednous.github.io/projects/fpstiming">FPSTiming</a>
-and <a href="https://github.com/remixlab/util_tree">util</a> (which
-provides <code>hashCode()</code>,  <code>equals()</code>  and  <code>clone()</code> Java implementations compatible with <a href="http://www.gwtproject.org/">gwt</a>).
+and <a href="https://github.com/remixlab/util_tree">util</a> (package based on <a href="https://code.google.com/p/gwt-hashcode-equals/">Daniel Bell gwt-hashcode-equals</a>
+which provides <code>hashCode()</code>,  <code>equals()</code>  and  <code>clone()</code> Java implementations compatible with <a href="http://www.gwtproject.org/">gwt</a>).
 Note that <strong>BIAS</strong>, <strong>FPSTIMING</strong> and <strong>UTIL</strong> are distributed as another git subtrees.</p>
 
 <h2 id="initial-setup">Initial setup</h2>
