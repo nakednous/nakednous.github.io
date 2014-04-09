@@ -62,13 +62,15 @@ only if the target platform (such as Processing) provides its own matrix handlin
 to set the [eye()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#eye()), once it's known if the
 Scene [is2D()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is2D())
 or [is3D()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is3D()).
-3. Instantiate some [agents](http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html) register them at the [inputHandler()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()).
+3. Instantiate some [agents](http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html) and register them at
+the [inputHandler()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()).
 4. Define whether or not the Scene [isOffscreen()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#isOffscreen()).
 5. Call [init()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#init()) at the end of the constructor.
 
 finally, implement all the abstract methods which mainly deals with how the visual hints are drawn.
 
-For an example, please refer to [ProScene](http://nakednous.github.io/projects/proscene) which provides a [Processing](http://processing.org/) implementation of Dandelion.
+For an example, please refer to [ProScene](http://nakednous.github.io/projects/proscene) which provides a [Processing](http://processing.org/)
+implementation of Dandelion.
 
 # Hacking
 
@@ -76,8 +78,8 @@ The package is developed as a [git subtree](https://github.com/git/git/blob/mast
 (see also ["here"](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)). It should thus be made part of a
 bigger (container) project (like [ProScene](http://nakednous.github.io/projects/proscene), see Figure 1).
 The package dependencies are [BIAS](http://nakednous.github.io/projects/bias), [FPSTiming](http://nakednous.github.io/projects/fpstiming)
-and [util](https://github.com/remixlab/util_tree) (which
-provides ```hashCode()```,  ```equals()```  and  ```clone()``` Java implementations compatible with [gwt](http://www.gwtproject.org/)).
+and [util](https://github.com/remixlab/util_tree) (package based on [Daniel Bell gwt-hashcode-equals](https://code.google.com/p/gwt-hashcode-equals/)
+which provides ```hashCode()```,  ```equals()```  and  ```clone()``` Java implementations compatible with [gwt](http://www.gwtproject.org/)).
 Note that **BIAS**, **FPSTIMING** and **UTIL** are distributed as another git subtrees.
 
 ## Initial setup

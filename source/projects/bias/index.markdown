@@ -80,9 +80,9 @@ In this case, to customize the user experience simply bind bogus event [Shortcut
 
 The package is developed as a [git subtree](https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt)
 (see also ["here"](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)). It should thus be made part of a
-bigger (container) project (see Figure 1). The package only dependency is [util](https://github.com/remixlab/util_tree) which
-provides ```hashCode()```,  ```equals()```  and  ```clone()``` Java implementations compatible with [gwt](http://www.gwtproject.org/).
-Note that **UTIL** is distributed as another git subtree.
+bigger (container) project (see Figure 1). The package only dependency is [util](https://github.com/remixlab/util_tree), package based
+on [Daniel Bell gwt-hashcode-equals](https://code.google.com/p/gwt-hashcode-equals/) which provides ```hashCode()```,  ```equals()```  and  ```clone()```
+Java implementations compatible with [gwt](http://www.gwtproject.org/). Note that **UTIL** is distributed as another git subtree.
 
 ## Initial setup
 
