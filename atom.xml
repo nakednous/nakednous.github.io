@@ -4,7 +4,7 @@
   <title><![CDATA[Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-04-10T17:34:16-05:00</updated>
+  <updated>2014-04-10T17:43:59-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -31,7 +31,6 @@ illustrating how to control the Scene using <a href="http://otrolado.info/prosce
 
 <p>check the code <a href="https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF">here</a> and the related apk 
 <a href="https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&amp;d=1">here</a>.</p>
-
 ]]></content>
   </entry>
   
