@@ -19,4 +19,3 @@ illustrating how to control the Scene using [DOF2Events](http://otrolado.info/pr
 
 check the code [here](https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF) and the related apk 
 [here](https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&d=1).
-
