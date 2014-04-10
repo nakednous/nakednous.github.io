@@ -4,7 +4,7 @@
   <title><![CDATA[Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-04-09T21:35:27-05:00</updated>
+  <updated>2014-04-10T17:34:16-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0-beta3 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/"/>
+    <updated>2014-04-10T17:10:02-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released</id>
+    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta3 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.3/proscene-2.0.0-beta.3.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+
+<p>This release introduces the first <em>proscene</em> Android port thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> and also improves
+the <a href="http://otrolado.info/prosceneApi/">API docs</a>. The port is taken place at its own <a href="https://github.com/remixlab/proscene.droid">fork</a> which
+we hope to integrate it back upstream once it is ready. The related zip file may be found
+<a href="https://github.com/remixlab/proscene.droid/blob/master/distribution/proscene-16/download/proscene.zip">here</a>. Here’s a proof-of-concept example
+illustrating how to control the Scene using <a href="http://otrolado.info/prosceneApi/remixlab/bias/event/DOF2Event.html">DOF2Events</a>:</p>
+
+<div class="embed-video-container"><iframe width="480" height="360" src="http://www.youtube.com/embed/Jm-63c7HXDc " frameborder="0" allowfullscreen=""></iframe></div>
+
+<p>check the code <a href="https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF">here</a> and the related apk 
+<a href="https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&amp;d=1">here</a>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.0-beta2 Released]]></title>
