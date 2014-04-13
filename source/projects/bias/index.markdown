@@ -28,7 +28,7 @@ and move it close to me).
 
 # Targeted applications
 
-Depending on whether or not the user define her own set of actions, targeted applications are:
+Depending on whether or not the user defines her own set of actions, targeted applications are:
 
 ## Action-less applications
 
