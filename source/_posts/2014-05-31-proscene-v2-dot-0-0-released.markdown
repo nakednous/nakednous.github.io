@@ -14,7 +14,7 @@ Version 2 introduces a re-designed library architecture (details may be found [h
 1. Support for 2D as well as 3D Processing renderers. Many of the examples are available in both cases.
 2. Support to all sort of interaction mechanisms you can dream of. Check out the `examples.Demos.Android2DOF`, `examples.Demos.Android3DOF` and `examples.Demos.Kinect5DOF` (the gestures use to control the camera are found [here](https://www.youtube.com/watch?v=G8SEzFMmMyI)). The Section `examples.Input` offers some other interesting examples regarding this.
 
-It's worth noticing that **ProScene** Android mode development is currently taken place at its own [fork](https://github.com/remixlab/proscene.droid) which we hope to integrate it back upstream once the _TouchEvents_ are directly supported in **Processing**.
+It's worth noticing that **ProScene** Android mode development is currently taken place at its own [fork](https://github.com/remixlab/proscene.droid) which we hope to integrate it back upstream once _TouchEvents_ are directly supported in **Processing**.
 The Android examples mentioned above, however, only require the Android-mode of **Processing** to run.
 
 This release also includes additional examples illustrating most of the new features. We are confident that a _learn-by-example_ methodology is the main (and most entertained) way to get use to them.
