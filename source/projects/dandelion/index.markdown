@@ -62,10 +62,11 @@ only if the target platform (such as Processing) provides its own matrix handlin
 to set the [eye()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#eye()), once it's known if the
 Scene [is2D()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is2D())
 or [is3D()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is3D()).
-3. Instantiate some [agents](http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html) and register them at
+3. Instantiate the (default) [motionAgent](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#motionAgent()) and [keyboardAgent](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#keyboardAgent()).
+4. (Optionally) When willing to use non-standard intertaction means (such as the kinect): Instantiate some [agents](http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html) and register them at
 the [inputHandler()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()).
-4. Define whether or not the Scene [isOffscreen()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#isOffscreen()).
-5. Call [init()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#init()) at the end of the constructor.
+5. Define whether or not the Scene [isOffscreen()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#isOffscreen()).
+6. Call [init()](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#init()) at the end of the constructor.
 
 finally, implement all the abstract methods which mainly deals with how the visual hints are drawn.
 
@@ -130,7 +131,10 @@ To update your **DANDELION** subtree:
 {% codeblock lang:sh %}
 #fetching command:
 git fetch dandelion master
-git subtree pull --prefix src/remixlab/dandelion dandelion master --squash
+git subtree pull --prefix src/remixlab/dandelion dandelion maAn {@link #inputHandler()} which handles all user input through {@link remixlab.bias.core.Agent}s (for details
+ * please refer to the {@link remixlab.bias.core.InputHandler} class). The {@link #inputHandler()} holds a (default)
+ * {@link #motionAgent()} and a (default) {@link #keyboardAgent()} which should be instantiated by derived classes at
+ * construction time.ster --squash
 {% endcodeblock %}
 
 To update your **BIAS** subtree:
