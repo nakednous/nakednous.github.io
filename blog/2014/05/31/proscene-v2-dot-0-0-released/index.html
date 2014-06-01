@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Proscene v2.0.0-beta1 Released - Jean Pierre Charalambos</title>
+  <title>Proscene v2.0.0 Released - Jean Pierre Charalambos</title>
   <meta name="author" content="Jean Pierre Charalambos">
 
   
@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released">
+  <link rel="canonical" href="http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released">
   <link href="/favicon.png" type="image/png" rel="icon">
   <link href="/atom.xml" rel="alternate" title="Jean Pierre Charalambos" type="application/atom+xml">
 
@@ -140,55 +140,44 @@
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-31T18:28:06-05:00" pubdate data-updated="true">May 31<span>st</span>, 2014</time>
         
       </p>
     
     
     <h1 class="entry-title">
-        Proscene v2.0.0-beta1 Released
+        Proscene v2.0.0 Released
         
     </h1>
     
   </header>
 
 
-<div class="entry-content clearfix"><p>Proscene v2.0.0-beta1 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.1/proscene-2.0.0-beta.1.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+<div class="entry-content clearfix"><p><strong>Proscene v2.0.0</strong> is out. Being a stable release, it should now be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0/proscene-2.0.0.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
 
-<p>The new API has been thoroughly reviewed and documented and may be considered frozen (unless something unexpected requiring a fix happens).
-Check it out <a href="http://otrolado.info/prosceneApi/">here</a>. We are greatful to <a href="http://www.alcys.com/">Jacques Maire</a> for contributing the new Proscene logo
-code which is a <a href="http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml">torus solenoid</a>.</p>
+<p>Version 2 introduces a re-designed library architecture (details may be found <a href="http://nakednous.github.io/projects/proscene/">here</a>) supporting all the features found in version 1 plus some others. Perhaps the two key new features are:</p>
 
-<p>The new library architecture comprises the following packages:</p>
+<ol>
+  <li>Support for 2D as well as 3D Processing renderers. Many of the examples are available in both cases.</li>
+  <li>Support to all sort of interaction mechanisms you can dream of. Check out the <code>examples.Demos.Android2DOF</code>, <code>examples.Demos.Android3DOF</code> and <code>examples.Demos.Kinect5DOF</code> (the gestures use to control the camera are found <a href="https://www.youtube.com/watch?v=G8SEzFMmMyI">here</a>). The Section <code>examples.Input</code> offers some other interesting examples regarding this.</li>
+</ol>
 
-<h2 id="fpstiminghttpsgithubcomremixlabfpstimingtree"><a href="https://github.com/remixlab/fpstiming_tree">FPSTiming</a></h2>
+<p>It’s worth noticing that <strong>ProScene</strong> Android mode development is currently taken place at its own <a href="https://github.com/remixlab/proscene.droid">fork</a> which we hope to integrate it back upstream once the <em>TouchEvents</em> are directly supported in <strong>Processing</strong>.
+The Android examples mentioned above, however, only require the Android-mode of <strong>Processing</strong> to run.</p>
 
-<p>A single-threaded <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html">timing handler</a> providing timers and animators.
-The package may be run stand-alone and it’s provided in its <a href="https://github.com/remixlab/fpstiming_tree">own tree</a>.</p>
+<p>This release also includes additional examples illustrating most of the new features. We are confident that a <em>learn-by-example</em> methodology is the main (and most entertained) way to get use to them.
+The <a href="http://otrolado.info/prosceneApi/">API</a> has also been thoroughly reviewed and fully documented.</p>
 
-<h2 id="biashttpsgithubcomremixlabbiastree"><a href="https://github.com/remixlab/bias_tree">BIAS</a></h2>
+<p>Happy hacking!</p>
 
-<p>An <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/InputHandler.html">input handler</a> providing means to translate event input data into high-level
-user-defined actions. The package represents the new Proscene event back-end, but it may be run stand-alone and it’s provided in its
-<a href="https://github.com/remixlab/bias_tree">own tree</a> too.</p>
+<h1 id="acknowledgments">Acknowledgments</h1>
 
-<h2 id="dandelionhttpsgithubcomremixlabdandeliontree"><a href="https://github.com/remixlab/dandelion_tree">Dandelion</a></h2>
-
-<p>Package implementing all sorts of (motion) <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.DandelionAction.html">actions</a> on Frames
-(coordinate systems). Dandelion depends on both, FPSTiming and BIAS. <!--- next version should mention it is language agnostic and the JS approach... --></p>
-
-<h2 id="proscene">Proscene</h2>
-
-<p>Package holding a single class (the <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene</a>) which represents an interface between Dandelion
-and Processing.</p>
-
-<p>Although the (high-level) <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene API</a> has been re-factored, Proscene1.x users may stick to it
-and feel at home. Most of the examples ported from Proscene1.x look even simpler now. They all have been re-organized reflecting the new structure to
-attract those willing to digg into the inners of the new architecture.</p>
-
-<p>Expect for one or two more betas before the final release. We plan to improve the docs, particularly that of the examples. Please report any bug or issue you
-may find and help us make the upcoming proscene2 as polished as possible.</p>
+<p>Thanks to <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.
+Thanks to experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for his collaboration with polishing the KeyFrameInterpolator sub-system.
+Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thansk to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
+Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
+Finally, thanks to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze us and inspire us.</p>
 </div>
 
 
@@ -212,7 +201,7 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
 
 
 
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-03-22T18:04:51-05:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-05-31T18:28:06-05:00" pubdate data-updated="true">May 31<span>st</span>, 2014</time>
           
 
 
@@ -220,7 +209,7 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
         
           <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" data-via="" data-counturl="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/" data-via="" data-counturl="http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/" >Tweet</a>
   
   
   
@@ -230,10 +219,8 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
         
           <ul class="meta text-muted pager">
             
-            <li class="previous"><a href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/" title="Previous Post: Proscene v2.0.0-alpha3 Released">&laquo; Proscene v2.0.0-alpha3 Released</a></li>
+            <li class="previous"><a href="/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/" title="Previous Post: Proscene v2.0.0-beta3 Released">&laquo; Proscene v2.0.0-beta3 Released</a></li>
             
-            
-            <li class="next"><a href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/" title="Next Post: Proscene v2.0.0-beta2 Released">Proscene v2.0.0-beta2 Released &raquo;</a></li>
             
           </ul>
         
@@ -258,13 +245,13 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
   
   <div id="recent_posts" class="list-group">
     
-    <a class="list-group-item " href="/blog/2014/05/31/proscene-v2-dot-0-0-released/">Proscene v2.0.0 Released</a>
+    <a class="list-group-item active" href="/blog/2014/05/31/proscene-v2-dot-0-0-released/">Proscene v2.0.0 Released</a>
     
     <a class="list-group-item " href="/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/">Proscene v2.0.0-beta3 Released</a>
     
     <a class="list-group-item " href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/">Proscene v2.0.0-beta2 Released</a>
     
-    <a class="list-group-item active" href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
+    <a class="list-group-item " href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
     
     <a class="list-group-item " href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/">Proscene v2.0.0-alpha3 Released</a>
     
@@ -299,8 +286,8 @@ may find and help us make the upcoming proscene2 as polished as possible.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
-        var disqus_url = 'http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/';
+        var disqus_identifier = 'http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/';
+        var disqus_url = 'http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/';
         var disqus_script = 'embed.js';
       
     (function () {

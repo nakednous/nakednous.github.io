@@ -202,7 +202,8 @@ only if the target platform (such as Processing) provides its own matrix handlin
 to set the <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#eye()">eye()</a>, once it’s known if the
 Scene <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is2D()">is2D()</a>
 or <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#is3D()">is3D()</a>.</li>
-  <li>Instantiate some <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html">agents</a> and register them at
+  <li>Instantiate the (default) <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#motionAgent()">motionAgent</a> and <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#keyboardAgent()">keyboardAgent</a>.</li>
+  <li>(Optionally) When willing to use non-standard intertaction means (such as the kinect): Instantiate some <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/Agent.html">agents</a> and register them at
 the <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#inputHandler()">inputHandler()</a>.</li>
   <li>Define whether or not the Scene <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#isOffscreen()">isOffscreen()</a>.</li>
   <li>Call <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html#init()">init()</a> at the end of the constructor.</li>
@@ -289,9 +290,15 @@ as any other basic git repo:</p>
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
 </pre></td><td class="code"><pre><code class="sh"><span class="line"><span class="c">#fetching command:</span>
 </span><span class="line">git fetch dandelion master
-</span><span class="line">git subtree pull --prefix src/remixlab/dandelion dandelion master --squash
+</span><span class="line">git subtree pull --prefix src/remixlab/dandelion dandelion maAn <span class="o">{</span>@link <span class="c">#inputHandler()} which handles all user input through {@link remixlab.bias.core.Agent}s (for details</span>
+</span><span class="line"> * please refer to the <span class="o">{</span>@link remixlab.bias.core.InputHandler<span class="o">}</span> class<span class="o">)</span>. The <span class="o">{</span>@link <span class="c">#inputHandler()} holds a (default)</span>
+</span><span class="line"> * <span class="o">{</span>@link <span class="c">#motionAgent()} and a (default) {@link #keyboardAgent()} which should be instantiated by derived classes at</span>
+</span><span class="line"> * construction time.ster --squash
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>To update your <strong>BIAS</strong> subtree:</p>
@@ -379,6 +386,8 @@ as any other basic git repo:</p>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/05/31/proscene-v2-dot-0-0-released/">Proscene v2.0.0 Released</a>
+    
     <a class="list-group-item " href="/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/">Proscene v2.0.0-beta3 Released</a>
     
     <a class="list-group-item " href="/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/">Proscene v2.0.0-beta2 Released</a>
@@ -386,8 +395,6 @@ as any other basic git repo:</p>
     <a class="list-group-item " href="/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">Proscene v2.0.0-beta1 Released</a>
     
     <a class="list-group-item " href="/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/">Proscene v2.0.0-alpha3 Released</a>
-    
-    <a class="list-group-item " href="/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/">Proscene v2.0.0-alpha2 Released</a>
     
   </div>
 </section>
