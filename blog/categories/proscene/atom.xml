@@ -4,7 +4,7 @@
   <title><![CDATA[Category: proscene | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/proscene/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-06-02T15:00:30-05:00</updated>
+  <updated>2014-06-02T15:07:57-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/"/>
+    <updated>2014-05-31T18:28:06-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.0</strong> is out. Being a stable release, it should now be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0/proscene-2.0.0.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<p>The library aims at providing interactivity to <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Frame.html">Frames</a>
+(coordinate systems) allowing picking and motion control of objects, including the
+<a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Eye.html">Eye</a>, which in 3D is referred to as the
+<a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Camera.html">Camera</a>.
+Version 2 introduces a new library design supporting all the features found in version 1 plus some others.
+Perhaps the three key new features are:</p>
+
+<ol>
+  <li>Cross-platform support: the new library architecture separates the core functionalities from the language/platform where target
+applications are to be run. <strong>ProScene</strong> may be regarded just as an interface between that core and <strong>Processing</strong>.
+Details may be found <a href="http://nakednous.github.io/projects/proscene/">here</a>. The <code>Demos.MatrixShader</code> example shows a taste of it.</li>
+  <li>Support to all sorts of interaction mechanisms, including the standard mouse and keyboard, but not being particularly tie
+to any of them. i.e., it’s <em>device agnostic</em> by design. The examples of the <code>Input</code> section illustrate the approach.</li>
+  <li>Support for 2D as well as 3D Processing renderers. Many of the examples are available in both cases.</li>
+</ol>
+
+<p>Combined, features 1. and 2., represent the foundation to implement a wide range of setups ranging from simple to very complex ones.
+For instance, we already began a <strong>ProScene</strong> Android port, which is currently taken place at its own
+<a href="https://github.com/remixlab/proscene.droid">fork</a>. We hope to integrate it back upstream once <em>TouchEvents</em> are directly
+supported in <strong>Processing</strong>. We also plan a first release of the Android port soon, so please stay tuned. In the mean time, have a look
+at the <code>examples.Demos.Android2DOF</code>,<code>examples.Demos.Android3DOF</code> which only require the Android-mode of <strong>Processing</strong> to run. We also
+implemented a <strong>kinect</strong> interface to control the camera on top of that foundation. The demo may be found at <code>examples.Demos.Kinect5DOF</code>
+and the gestures implemented to control the camera <a href="https://www.youtube.com/watch?v=G8SEzFMmMyI">here</a>. Finally, we hope that the
+Version 2 cycle will see the first <strong>Java-Script</strong> port taking the most out of our approach.</p>
+
+<p>This release also includes additional examples illustrating most of the new features. We are confident that a <em>learn-by-example</em> methodology
+is the main (and most entertained) way to get use to them. The <a href="http://otrolado.info/prosceneApi/">API</a> has also been thoroughly reviewed
+and fully documented.</p>
+
+<p>Happy hacking!</p>
+
+<h1 id="acknowledgments">Acknowledgments</h1>
+
+<p>Thanks to <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.
+Thanks to experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for his collaboration with polishing the KeyFrameInterpolator sub-system.
+Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thansk to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
+Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
+Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze us and inspire us.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.0-beta3 Released]]></title>
@@ -49,6 +98,50 @@ We encourage all Proscene2 users to upgrade to this version.</p>
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0-beta1 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/"/>
+    <updated>2014-03-22T18:04:51-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released</id>
+    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta1 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.1/proscene-2.0.0-beta.1.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+
+<p>The new API has been thoroughly reviewed and documented and may be considered frozen (unless something unexpected requiring a fix happens).
+Check it out <a href="http://otrolado.info/prosceneApi/">here</a>. We are greatful to <a href="http://www.alcys.com/">Jacques Maire</a> for contributing the new Proscene logo
+code which is a <a href="http://www.mathcurve.com/courbes3d/solenoidtoric/solenoidtoric.shtml">torus solenoid</a>.</p>
+
+<p>The new library architecture comprises the following packages:</p>
+
+<h2 id="fpstiminghttpsgithubcomremixlabfpstimingtree"><a href="https://github.com/remixlab/fpstiming_tree">FPSTiming</a></h2>
+
+<p>A single-threaded <a href="http://otrolado.info/prosceneApi/remixlab/fpstiming/TimingHandler.html">timing handler</a> providing timers and animators.
+The package may be run stand-alone and it’s provided in its <a href="https://github.com/remixlab/fpstiming_tree">own tree</a>.</p>
+
+<h2 id="biashttpsgithubcomremixlabbiastree"><a href="https://github.com/remixlab/bias_tree">BIAS</a></h2>
+
+<p>An <a href="http://otrolado.info/prosceneApi/remixlab/bias/core/InputHandler.html">input handler</a> providing means to translate event input data into high-level
+user-defined actions. The package represents the new Proscene event back-end, but it may be run stand-alone and it’s provided in its
+<a href="https://github.com/remixlab/bias_tree">own tree</a> too.</p>
+
+<h2 id="dandelionhttpsgithubcomremixlabdandeliontree"><a href="https://github.com/remixlab/dandelion_tree">Dandelion</a></h2>
+
+<p>Package implementing all sorts of (motion) <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Constants.DandelionAction.html">actions</a> on Frames
+(coordinate systems). Dandelion depends on both, FPSTiming and BIAS. <!--- next version should mention it is language agnostic and the JS approach... --></p>
+
+<h2 id="proscene">Proscene</h2>
+
+<p>Package holding a single class (the <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene</a>) which represents an interface between Dandelion
+and Processing.</p>
+
+<p>Although the (high-level) <a href="http://otrolado.info/prosceneApi/remixlab/proscene/Scene.html">Scene API</a> has been re-factored, Proscene1.x users may stick to it
+and feel at home. Most of the examples ported from Proscene1.x look even simpler now. They all have been re-organized reflecting the new structure to
+attract those willing to digg into the inners of the new architecture.</p>
+
+<p>Expect for one or two more betas before the final release. We plan to improve the docs, particularly that of the examples. Please report any bug or issue you
+may find and help us make the upcoming proscene2 as polished as possible.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Proscene v2.0.0-alpha3 Released]]></title>
     <link href="http://nakednous.github.io/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/"/>
     <updated>2014-01-28T18:54:47-05:00</updated>
@@ -63,24 +156,6 @@ KeyFrameInterpolator sub-system. We’ve also implemented view frustum 2D cullin
 
 <p>We now enter the beta (sub)cycle which will focus on documentation completeness and bug fixing, to make the upcoming proscene2 as
 polished as possible.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Proscene v2.0.0-alpha2 released]]></title>
-    <link href="http://nakednous.github.io/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released/"/>
-    <updated>2013-11-26T17:13:29-05:00</updated>
-    <id>http://nakednous.github.io/blog/2013/11/26/proscene-v2-dot-0-0-alpha2-released</id>
-    <content type="html"><![CDATA[<p>Proscene v2.0.0-alpha2 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.2/proscene-2.0.0-alpha.2.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
-
-<p>Respect to the <a href="http://nakednous.github.io/blog/2013/10/26/proscene-v2-dot-0-0-alpha1-released/">first alpha</a>, this release implements full matrix handling in core,
-making possible to perform all geometry transformations directly by proscene2. Actually, this is part of a more general idea: to make it
-possible to run proscene2 within other contexts different than Processing. Please refer to the new example Basics.MatrixShader.
-I hope to give more details here soon.</p>
-
-<p>Currently, we are performing more experiments to decide what experimental stuff will make it into the upcoming cycle. We plan to release a pair or
-so of more alphas with our results before entering beta stage.</p>
 ]]></content>
   </entry>
   
