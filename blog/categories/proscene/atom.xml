@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: proscene, | Jean Pierre Charalambos]]></title>
+  <title><![CDATA[Category: proscene | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/proscene/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-06-02T12:00:05-05:00</updated>
+  <updated>2014-06-02T15:00:30-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0-beta3 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/"/>
+    <updated>2014-04-10T17:10:02-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released</id>
+    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta3 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.3/proscene-2.0.0-beta.3.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+
+<p>This release introduces the first <em>proscene</em> Android port thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> and also improves
+the <a href="http://otrolado.info/prosceneApi/">API docs</a>. The port is taken place at its own <a href="https://github.com/remixlab/proscene.droid">fork</a> which
+we hope to integrate it back upstream once it is ready. The related zip file may be found
+<a href="https://github.com/remixlab/proscene.droid/blob/master/distribution/proscene-16/download/proscene.zip">here</a>. Here’s a proof-of-concept example
+illustrating how to control the Scene using <a href="http://otrolado.info/prosceneApi/remixlab/bias/event/DOF2Event.html">DOF2Events</a>:</p>
+
+<p><div class="embed-video-container"><iframe width="480" height="360" src="http://www.youtube.com/embed/Jm-63c7HXDc " frameborder="0" allowfullscreen></iframe></div></p>
+
+<p>check the code <a href="https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF">here</a> and the related apk 
+<a href="https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&amp;d=1">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0-beta2 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/"/>
+    <updated>2014-03-23T19:24:12-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released</id>
+    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta2 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.2/proscene-2.0.0-beta.2.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+
+<p>This release fixes a nasty bug introduced in the <a href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">previous beta</a> which made
+the scene dissapear when dragging with the mouse center button. Thanks to <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for reporting it.
+We encourage all Proscene2 users to upgrade to this version.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.0-alpha3 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/"/>
+    <updated>2014-01-28T18:54:47-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released</id>
+    <content type="html"><![CDATA[<p>Proscene v2.0.0-alpha3 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.3/proscene-2.0.0-alpha.3.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
+
+<p>This release completes the main functionality expected in proscene2 and also focuses on API stabilization. Thanks to collaborations with
+experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a>, to whom we’re greatful, we’ve polished the
+KeyFrameInterpolator sub-system. We’ve also implemented view frustum 2D culling routines
+(please refer to the new example: <code>TwoD.WindowCulling</code>), thus completing the 2D functionality.</p>
+
+<p>We now enter the beta (sub)cycle which will focus on documentation completeness and bug fixing, to make the upcoming proscene2 as
+polished as possible.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.0-alpha2 released]]></title>
