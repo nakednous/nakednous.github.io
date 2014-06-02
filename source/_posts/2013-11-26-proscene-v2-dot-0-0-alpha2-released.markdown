@@ -3,7 +3,7 @@ layout: post
 title: "Proscene v2.0.0-alpha2 released"
 date: 2013-11-26 17:13:29 -0500
 comments: true
-categories: proscene, dandelion
+categories: proscene
 ---
 
 Proscene v2.0.0-alpha2 is out. Download it [here](https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.2/proscene-2.0.0-alpha.2.zip) 

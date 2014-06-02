@@ -3,7 +3,7 @@ layout: post
 title: "Proscene v2.0.0-alpha3 Released"
 date: 2014-01-28 18:54:47 -0500
 comments: true
-categories: 
+categories: proscene
 ---
 
 Proscene v2.0.0-alpha3 is out. Download it [here](https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.3/proscene-2.0.0-alpha.3.zip) 

@@ -3,7 +3,7 @@ layout: post
 title: "Proscene v2.0.0-alpha1 released"
 date: 2013-10-26 15:23
 comments: true
-categories: proscene
+categories: proscene, dandelion, bias, fpstiming
 ---
 
 Today I'm releasing the first alpha of what will hopefully become *proscene2*. For the impatient, [download it](https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.1/proscene-2.0.0-alpha.1.zip) and extract it to your sketchbook `libraries` folder (automatic importing *proscene* from your PDE is only available for stable releases, currently v-1.2.0). Even though the library has almost been completely rewritten from the ground up, you will find most of the current examples with some minor changes, plus a whole bunch of new ones. There's also a new project [home](http://otrolado.info/) and its code is now kindly hosted at [github](https://github.com/remixlab). Read on for some more details.

@@ -3,7 +3,7 @@ layout: post
 title: "Proscene v2.0.0 Released"
 date: 2014-05-31 18:28:06 -0500
 comments: true
-categories: 
+categories: proscene, dandelion, bias, fpstiming
 ---
 
 **Proscene v2.0.0** is out. Being a stable release, it should now be possible to import it directly from your PDE. Otherwise download it [here](https://github.com/remixlab/proscene/releases/download/v-2.0.0/proscene-2.0.0.zip) 
