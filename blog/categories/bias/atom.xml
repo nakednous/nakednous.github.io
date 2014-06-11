@@ -4,7 +4,7 @@
   <title><![CDATA[Category: bias | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/bias/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-06-05T00:02:34-05:00</updated>
+  <updated>2014-06-11T15:59:20-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -56,9 +56,9 @@ and fully documented.</p>
 
 <p>Thanks to <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.
 Thanks to experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for his collaboration with polishing the KeyFrameInterpolator sub-system.
-Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thansk to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
+Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thanks to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
 Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
-Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze us and inspire us.</p>
+Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze and inspire us.</p>
 ]]></content>
   </entry>
   
