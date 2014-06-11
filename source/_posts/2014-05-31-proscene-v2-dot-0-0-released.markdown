@@ -42,6 +42,6 @@ Happy hacking!
 
 Thanks to [Eduardo Moriana](http://edumo.net/) and [Miguel Parra](http://maparrar.github.io/) for their contributions with the [TUIO](http://www.tuio.org/)-based touch and kinect interfaces, respectively.
 Thanks to experimental computational designer [Amnon Owed](https://twitter.com/AmnonOwed/media) for his collaboration with polishing the KeyFrameInterpolator sub-system.
-Thanks to [Jacques Maire](http://www.xelyx.fr) for providing most of the examples found at the *contrib* section. Thansk to [Andres Colubri](http://codeanticode.wordpress.com/) for his continuous support and thorough insights.
+Thanks to [Jacques Maire](http://www.xelyx.fr) for providing most of the examples found at the *contrib* section. Thanks to [Andres Colubri](http://codeanticode.wordpress.com/) for his continuous support and thorough insights.
 Thanks to [Victor Forero](https://sites.google.com/site/proscenedroi/home) who is developing the [proscene Android port](https://github.com/remixlab/proscene.droid).
-Thanks also to all **ProScene** users whose sketchs and library hacks always amaze us and inspire us.
+Thanks also to all **ProScene** users whose sketchs and library hacks always amaze and inspire us.
