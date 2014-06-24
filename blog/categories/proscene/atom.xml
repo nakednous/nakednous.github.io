@@ -4,7 +4,7 @@
   <title><![CDATA[Category: proscene | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/proscene/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-06-11T15:59:20-05:00</updated>
+  <updated>2014-06-23T20:24:29-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.1 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/06/23/proscene-v2-dot-0-1-released/"/>
+    <updated>2014-06-23T19:48:27-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/06/23/proscene-v2-dot-0-1-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.1</strong> is out. It should be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.1/proscene-2.0.1.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ol>
+  <li>API changes</li>
+  <li><code>remixlab.dandelion.core.Constants.WheelAction</code> has been renamed as <code>Constants.DOF1Action</code>. The former has been marked as deprecated. The change should be reflected
+  in all <em>scene mouse wheel</em> methods.</li>
+  <li><code>remixlab.bias.core.EventConstants</code> has been removed. Modifier constant values have been moved to <code>remixlab.bias.core.BogusEvent</code>. Use <code>PApplet.LEFT</code>, <code>PApplet.CENTER</code> and <code>PApplet.RIGHT</code> to refer to mouse buttons.</li>
+  <li>New example <code>Frame.FrameAPI</code> added illustrating the powerful Frame API used to convert points and vectors along a frame hierarchy.</li>
+</ol>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.0 Released]]></title>
@@ -138,24 +158,6 @@ attract those willing to digg into the inners of the new architecture.</p>
 
 <p>Expect for one or two more betas before the final release. We plan to improve the docs, particularly that of the examples. Please report any bug or issue you
 may find and help us make the upcoming proscene2 as polished as possible.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Proscene v2.0.0-alpha3 Released]]></title>
-    <link href="http://nakednous.github.io/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released/"/>
-    <updated>2014-01-28T18:54:47-05:00</updated>
-    <id>http://nakednous.github.io/blog/2014/01/28/proscene-v2-dot-0-0-alpha3-released</id>
-    <content type="html"><![CDATA[<p>Proscene v2.0.0-alpha3 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.3/proscene-2.0.0-alpha.3.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
-
-<p>This release completes the main functionality expected in proscene2 and also focuses on API stabilization. Thanks to collaborations with
-experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a>, to whom we’re greatful, we’ve polished the
-KeyFrameInterpolator sub-system. We’ve also implemented view frustum 2D culling routines
-(please refer to the new example: <code>TwoD.WindowCulling</code>), thus completing the 2D functionality.</p>
-
-<p>We now enter the beta (sub)cycle which will focus on documentation completeness and bug fixing, to make the upcoming proscene2 as
-polished as possible.</p>
 ]]></content>
   </entry>
   

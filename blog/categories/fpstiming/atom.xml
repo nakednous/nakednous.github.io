@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fpstiming | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/fpstiming/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-06-11T15:59:20-05:00</updated>
+  <updated>2014-06-23T20:24:29-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.1 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/06/23/proscene-v2-dot-0-1-released/"/>
+    <updated>2014-06-23T19:48:27-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/06/23/proscene-v2-dot-0-1-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.1</strong> is out. It should be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.1/proscene-2.0.1.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ol>
+  <li>API changes</li>
+  <li><code>remixlab.dandelion.core.Constants.WheelAction</code> has been renamed as <code>Constants.DOF1Action</code>. The former has been marked as deprecated. The change should be reflected
+  in all <em>scene mouse wheel</em> methods.</li>
+  <li><code>remixlab.bias.core.EventConstants</code> has been removed. Modifier constant values have been moved to <code>remixlab.bias.core.BogusEvent</code>. Use <code>PApplet.LEFT</code>, <code>PApplet.CENTER</code> and <code>PApplet.RIGHT</code> to refer to mouse buttons.</li>
+  <li>New example <code>Frame.FrameAPI</code> added illustrating the powerful Frame API used to convert points and vectors along a frame hierarchy.</li>
+</ol>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.0 Released]]></title>
