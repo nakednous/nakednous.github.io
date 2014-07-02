@@ -50,6 +50,8 @@ cd .themes/octostrap3
 git remote -v
 git remote add octostrap3 https://github.com/kAworu/octostrap3.git
 git remote -v
+#submodules are headless so create a local working branch:
+git checkout -b work
 git pull octostrap3 master
 ```
 
@@ -61,7 +63,9 @@ gem install bundler
 #edit your .bashrc to make bundler install gems locally (see: https://wiki.archlinux.org/index.php/ruby#Bundler)
 #now install the gems locally
 bundle install
-#edit ~$HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/ to make it use python2 instead of python.
+#if rake is not installed locally then
+gem install rake -v 10.1.0
+#edit $HOME/.gem/ruby/2.1.0/gems/pygments.rb-0.3.7/lib/pygments/mentos.py to make it use python2 instead of python.
 ```
 
 * Install the octostrap3 theme

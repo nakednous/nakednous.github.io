@@ -13,4 +13,3 @@ and extract it to your sketchbook `libraries` folder.
 
 1. Fix for a ZOOM_ON_REGION action bug that appeared when the action was triggered during a mouse drag and wasn't started at a mouse press.
 2. New example `Timing.AnimationHandler` which illustrates how to add an animation handler function to the scene.
-
