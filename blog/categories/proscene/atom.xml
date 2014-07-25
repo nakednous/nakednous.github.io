@@ -4,7 +4,7 @@
   <title><![CDATA[Category: proscene | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/proscene/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-07-02T16:58:20-05:00</updated>
+  <updated>2014-07-25T11:33:36-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.3 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/07/25/proscene-v2-dot-0-3-released/"/>
+    <updated>2014-07-25T10:41:47-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/07/25/proscene-v2-dot-0-3-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.3</strong> is out. It should be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.3/proscene-2.0.3.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ol>
+  <li>Many examples have been improved. For instance, those focusing interactivity to a particular Frame from the <code>scene.mouseAgent()</code>, such as <code>Frame.FrameInteraction</code> have been
+simplified.</li>
+  <li>The following (missing) functions were added to the Scene: <code>isMouseButtonActionBound(Target target, DOF2Action action)</code>, <code>isMouseWheelActionBound(Target target, DOF1Action action)</code>
+and <code>isMouseClickActionBound(Target target, ClickAction action)</code>. The <code>Eye.CadCamera</code> example illustrates them.</li>
+  <li>The <code>remixlab.bias.agent.profile</code> API has slightly been changed to be unified across all its classes taking the <code>remixlab.bias.agent.profile.Profile</code> base class as a model.
+Methods holding the old syntax have been marked as deprecated, e.g., <code>KeyboardProfile.shortcut()</code>, <code>KeyboardProfile.isShortcutInUse()</code>, <code>KeyboardProfile.isKeyboardActionBound()</code>;
+use <code>KeyboardProfile.binding()</code>, <code>KeyboardProfile.isBindingInUse()</code>, <code>KeyboardProfile.isActionBound()</code> respectively, instead.</li>
+</ol>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.2 Released]]></title>
@@ -119,20 +141,6 @@ illustrating how to control the Scene using <a href="http://otrolado.info/prosce
 
 <p>check the code <a href="https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF">here</a> and the related apk 
 <a href="https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&amp;d=1">here</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Proscene v2.0.0-beta2 Released]]></title>
-    <link href="http://nakednous.github.io/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released/"/>
-    <updated>2014-03-23T19:24:12-05:00</updated>
-    <id>http://nakednous.github.io/blog/2014/03/23/proscene-v2-dot-0-0-beta2-released</id>
-    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta2 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.2/proscene-2.0.0-beta.2.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
-
-<p>This release fixes a nasty bug introduced in the <a href="http://nakednous.github.io/blog/2014/03/22/proscene-v2-dot-0-0-beta1-released/">previous beta</a> which made
-the scene dissapear when dragging with the mouse center button. Thanks to <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for reporting it.
-We encourage all Proscene2 users to upgrade to this version.</p>
 ]]></content>
   </entry>
   
