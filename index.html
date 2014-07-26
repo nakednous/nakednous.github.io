@@ -144,6 +144,50 @@
 
 
 
+<span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-26T15:13:46-05:00" pubdate data-updated="true">Jul 26<span>th</span>, 2014</time>
+        
+      </p>
+    
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/26/proscene-v2-dot-0-4-released/">Proscene v2.0.4 Released</a></h1>
+    
+  </header>
+
+
+  <div class="entry-content clearfix"><p><strong>Proscene v2.0.4</strong> is out. It should be possible to import/update it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.4/proscene-2.0.4.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ul>
+  <li>Adds few <code>remixlab.bias.agent.profile</code> API improvements missed in the <a href="http://nakednous.github.io/blog/2014/07/25/proscene-v2-dot-0-3-released/">previous release</a>. Methods holding the old syntax have been marked as deprecated</li>
+</ul>
+</div>
+  
+  
+
+
+        </article>
+      
+      
+        <article class="post">
+          
+  <header class="page-header">
+    
+      <p class="meta text-muted text-uppercase">
+        
+
+
+
+
+
+
+
+
+
+
+
+
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2014-07-25T10:41:47-05:00" pubdate data-updated="true">Jul 25<span>th</span>, 2014</time>
         
       </p>
@@ -602,86 +646,11 @@ so of more alphas with our results before entering beta stage.</p>
 
         </article>
       
-      
-        <article class="post">
-          
-  <header class="page-header">
-    
-      <p class="meta text-muted text-uppercase">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-<span class="glyphicon glyphicon-calendar"></span> <time datetime="2013-10-26T15:23:00-05:00" pubdate data-updated="true">Oct 26<span>th</span>, 2013</time>
-        
-      </p>
-    
-    
-      <h1 class="entry-title"><a href="/blog/2013/10/26/proscene-v2-dot-0-0-alpha1-released/">Proscene v2.0.0-alpha1 Released</a></h1>
-    
-  </header>
-
-
-  <div class="entry-content clearfix"><p>Today I’m releasing the first alpha of what will hopefully become <em>proscene2</em>. For the impatient, <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-alpha.1/proscene-2.0.0-alpha.1.zip">download it</a> and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>proscene</em> from your PDE is only available for stable releases, currently v-1.2.0). Even though the library has almost been completely rewritten from the ground up, you will find most of the current examples with some minor changes, plus a whole bunch of new ones. There’s also a new project <a href="http://otrolado.info/">home</a> and its code is now kindly hosted at <a href="https://github.com/remixlab">github</a>. Read on for some more details.</p>
-
-<h2 id="motivation">Motivation</h2>
-
-<p>Some years ago <em>Proscene</em> was firstly designed to ease interactivity of 3D <em>Processing</em> scenes through standard input devices: mouse and keyboard. Then at some point when we noticed that some of you guys were interacting within your sketches using “non-standard” Human Interface Devices (HIDs), we decided to add some basic support to them, but the code never really makes it to <em>Proscene’s</em> core: the <code>iFrame</code> class hierarchy. The reason for that being that <code>iFrames</code> and (standard) input events were tightly coupled. Our first <em>Proscene</em> design also lacked providing means to interact using a touch device, mainly because back in 2010 when it was first released, there wasn’t a Processing “android mode”. On the other hand, as with any other <em>Processing</em> library, publishing a sketch online was a matter of exporting it as a java applet. However, this is no longer the case and, as most of you probably know, Java-Script (JS) has almost ended up replacing java applets in <em>Processing2</em>.</p>
-
-<h2 id="challenges-for-the-proscene2-cycle">Challenges for the Proscene2 cycle</h2>
-
-<ol>
-  <li>Add 2D <code>Scene</code> mode (e.g., <code>size(640, 360, P2D); scene = new Scene(this);</code>). Yes, it’s not part of the above motivation, but that would be cool ;)</li>
-  <li>Allow adding a new HID to interact with a 2D or 3D scene as simple as possible, without hindering the customization flexibility as it is found with standard devices.</li>
-  <li>Support other <em>Processing</em> modes such as JS and/or Android.</li>
-</ol>
-
-<p>and while it has been progress for the third challenge, this release only covers the first two of them.</p>
-
-<h2 id="approach">Approach</h2>
-
-<ol>
-  <li>2D interactivity required <code>scaling</code> to be added to <code>iFrames</code> which are now defined by their <code>position</code>, <code>orientation</code> and (now) <code>scaling</code>. As a result, moving the viewpoint around, picking and manipulating objects, adding keyframes to a camera path, etc., are all now possible in 2D too.</li>
-  <li>We completely decoupled the handling of HIDs from the set of <em>actions</em> (all sorts of <code>iFrame</code> manipulations) supported by <em>Proscene</em>, by defining a set of <em>virtual events</em> (called <code>TerseEvents</code>) which represents an interface between them. An important <code>TerseEvent</code> specialization is a <code>MotionEvent</code> which is defined according to its degrees-of-freedom (<a href="http://en.wikipedia.org/wiki/Degrees_of_freedom_(mechanics)">DOFs</a>), making it particularly suitable to applications requiring all sorts of kinematics computations, such as those involved in <code>iFrame</code> manipulations. Adding an HID thus “<em>only</em>” requires reducing hardware input events to <code>MotionEvents</code>, from which all <em>Proscene</em> actions are now implemented.</li>
-</ol>
-
-<p>Expect more technical details regarding <em>Proscene2</em> and its new package structure with the next pre-releases.</p>
-
-<h2 id="current-status-why-we-call-it-alpha1">Current status: why we call it <em>alpha.1</em>?</h2>
-
-<ol>
-  <li>JS mode: work-in-progress.</li>
-  <li>Examples documentation: mostly missing. However all the examples seem to run fine here (<a href="https://www.archlinux.org/">archlinux</a> and <em>Processing-2.1b1</em>).</li>
-  <li>API docs: broken and incomplete.</li>
-  <li>Advanced examples need more polishing.</li>
-</ol>
-
-<p>This release is mainly aimed at testers and enthusiasts that wanna try the new features from perfectly well undocumented examples ;)</p>
-
-<h2 id="acknowledgements">Acknowledgements</h2>
-
-<p>Thanks to  <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.</p>
-</div>
-  
-  
-
-
-        </article>
-      
     </div>
 
     <ul class="pager">
       
-        <li class="previous disabled"><a href="#">&larr;&nbsp;Older</a></li>
+        <li class="previous"><a href="/blog/page/2/">&larr;&nbsp;Older</a></li>
       
       <li><a href="/blog/archives">Blog Archives</a></li>
       
@@ -700,6 +669,8 @@ so of more alphas with our results before entering beta stage.</p>
   
   <div id="recent_posts" class="list-group">
     
+    <a class="list-group-item " href="/blog/2014/07/26/proscene-v2-dot-0-4-released/">Proscene v2.0.4 Released</a>
+    
     <a class="list-group-item " href="/blog/2014/07/25/proscene-v2-dot-0-3-released/">Proscene v2.0.3 Released</a>
     
     <a class="list-group-item " href="/blog/2014/07/02/proscene-v2-dot-0-2-released/">Proscene v2.0.2 Released</a>
@@ -707,8 +678,6 @@ so of more alphas with our results before entering beta stage.</p>
     <a class="list-group-item " href="/blog/2014/06/23/proscene-v2-dot-0-1-released/">Proscene v2.0.1 Released</a>
     
     <a class="list-group-item " href="/blog/2014/05/31/proscene-v2-dot-0-0-released/">Proscene v2.0.0 Released</a>
-    
-    <a class="list-group-item " href="/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/">Proscene v2.0.0-beta3 Released</a>
     
   </div>
 </section>

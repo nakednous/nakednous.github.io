@@ -4,7 +4,7 @@
   <title><![CDATA[Category: proscene | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/proscene/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-07-25T11:34:50-05:00</updated>
+  <updated>2014-07-26T15:20:39-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.4 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/07/26/proscene-v2-dot-0-4-released/"/>
+    <updated>2014-07-26T15:13:46-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/07/26/proscene-v2-dot-0-4-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.4</strong> is out. It should be possible to import/update it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.4/proscene-2.0.4.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ul>
+  <li>Adds few <code>remixlab.bias.agent.profile</code> API improvements missed in the <a href="http://nakednous.github.io/blog/2014/07/25/proscene-v2-dot-0-3-released/">previous release</a>. Methods holding the old syntax have been marked as deprecated</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.3 Released]]></title>
@@ -120,27 +136,6 @@ Thanks to experimental computational designer <a href="https://twitter.com/Amnon
 Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thanks to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
 Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
 Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze and inspire us.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Proscene v2.0.0-beta3 Released]]></title>
-    <link href="http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released/"/>
-    <updated>2014-04-10T17:10:02-05:00</updated>
-    <id>http://nakednous.github.io/blog/2014/04/10/proscene-v2-dot-0-0-beta3-released</id>
-    <content type="html"><![CDATA[<p>Proscene v2.0.0-beta3 is out. Download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0-beta.3/proscene-2.0.0-beta.3.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder (automatic importing <em>Proscene</em> from your PDE is only available for stable releases, currently v-1.2.0).</p>
-
-<p>This release introduces the first <em>proscene</em> Android port thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> and also improves
-the <a href="http://otrolado.info/prosceneApi/">API docs</a>. The port is taken place at its own <a href="https://github.com/remixlab/proscene.droid">fork</a> which
-we hope to integrate it back upstream once it is ready. The related zip file may be found
-<a href="https://github.com/remixlab/proscene.droid/blob/master/distribution/proscene-16/download/proscene.zip">here</a>. Here’s a proof-of-concept example
-illustrating how to control the Scene using <a href="http://otrolado.info/prosceneApi/remixlab/bias/event/DOF2Event.html">DOF2Events</a>:</p>
-
-<p><div class="embed-video-container"><iframe width="480" height="360" src="http://www.youtube.com/embed/Jm-63c7HXDc " frameborder="0" allowfullscreen></iframe></div></p>
-
-<p>check the code <a href="https://github.com/remixlab/proscene.droid/tree/master/examples/Touch2DOF">here</a> and the related apk 
-<a href="https://sites.google.com/site/proscenedroi/HelloProscene.apk?attredirects=0&amp;d=1">here</a>.</p>
 ]]></content>
   </entry>
   
