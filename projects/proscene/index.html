@@ -140,6 +140,7 @@
   <li><a href="#key-features">Key features</a></li>
   <li><a href="#origin-of-the-name">Origin of the name</a></li>
   <li><a href="#usage">Usage</a></li>
+  <li><a href="#installation">Installation</a></li>
   <li><a href="#hacking">Hacking</a>    <ul>
       <li><a href="#read-only-access-setup">Read-only access setup</a></li>
       <li><a href="#read-write-access-setup">Read-write access setup</a></li>
@@ -164,7 +165,8 @@ between <a href="http://nakednous.github.io/projects/dandelion">Dandelion</a> an
 
 <p><strong>ProScene</strong> provides seemless integration with <strong>Processing</strong>: its API has been designed to fit that of <strong>Processing</strong> and its implementation has been optimized to work along side with it. It supports all major <strong>Processing</strong> flavours: Desktop, JS, and Android.</p>
 
-<p><strong>ProScene</strong> support is led by the active and great Processing community at its <a href="http://forum.processing.org/two/search?Search=proscene">forum</a> where you can reach us.</p>
+<p><strong>ProScene</strong> support is led by the active and great Processing community at its <a href="http://forum.processing.org/two/search?Search=proscene">forum</a> where you can reach us.
+Please report issues at <a href="https://github.com/remixlab/proscene/issues">github</a>.</p>
 
 <h1 id="key-features">Key features</h1>
 
@@ -181,7 +183,7 @@ between <a href="http://nakednous.github.io/projects/dandelion">Dandelion</a> an
   <li>Object picking.</li>
   <li>Keyboard shortcuts and HID bindings customization.</li>
   <li>Animation framework.</li>
-  <li>Screen drawing (i.e., drawing of 2d primitives on top of a 3d scene).</li>
+  <li>Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 2d) scene.</li>
   <li>Off-screen rendering mode support.</li>
   <li>Handy set of complete documented examples that illustrates the use of the package</li>
   <li>A complete <a href="http://otrolado.info/prosceneApi/">reference documentation</a>.</li>
@@ -190,7 +192,7 @@ between <a href="http://nakednous.github.io/projects/dandelion">Dandelion</a> an
 
 <h1 id="origin-of-the-name">Origin of the name</h1>
 
-<p><strong>ProScene</strong> not only means a <em>“pro-scene”</em>, but it is a two-phoneme word pronounced similar as the Czech word <em>“prosím”</em> (which means <em>“please”</em>), obtained by removing the middle phoneme (<em>“ce”</em>) of the word <em>pro-ce-ssing</em>. Thus, the name <em>“ProScene”</em> suggests the main goal of the package, which is to help you <em>shorten</em> the creation of interactive 3D scenes in <em>Processing</em>.</p>
+<p><strong>ProScene</strong> not only means a <em>“pro-scene”</em>, but it is a two-phoneme word pronounced similar as the Czech word <em>“prosím”</em> (which means <em>“please”</em>), obtained by removing the middle phoneme (<em>“ce”</em>) of the word <em>pro-ce-ssing</em>. Thus, the name <em>“ProScene”</em> suggests the main goal of the package, which is to help you <em>shorten</em> the creation of interactive 2D/3D scenes in <em>Processing</em>.</p>
 
 <h1 id="usage">Usage</h1>
 
@@ -203,6 +205,10 @@ between <a href="http://nakednous.github.io/projects/dandelion">Dandelion</a> an
 </ol>
 
 <p>See the examples <strong>BasicUse</strong>, <strong>AlternativeUse</strong>, and <strong>AuxiliarViewer</strong> for an illustration of these techniques. To get start using the library and learn its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of the fully documented <a href="http://www.disi.unal.edu.co/grupos/remixlab/local/projects/proscene-1.1.0/reference/index.html">API reference</a> (which is also included in the package file).</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Import/update it directly from your PDE. Otherwise download your release from <a href="https://github.com/remixlab/proscene/releases">here</a> and extract it to your sketchbook <code>libraries</code> folder.</p>
 
 <h1 id="hacking">Hacking</h1>
 
@@ -269,7 +275,7 @@ see Figure 1):</p>
 
 <p>Thanks to <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.
 Thanks to experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for his collaboration with polishing the KeyFrameInterpolator sub-system.
-Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thansk to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
+Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thanks to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
 Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
 Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze us and inspire us.</p>
 
