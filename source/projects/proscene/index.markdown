@@ -31,22 +31,23 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 # Key features
 
 * *Tested* under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D Processing renderers. No special dependencies or requirements needed (apart of course from [Processing-2.x](http://processing.org/ Processing-1.5.1)).
-* It supports all major **Processing** flavours: Desktop, JS, and Android.
+* It supports all major **Processing** flavours: [Desktop](https://github.com/remixlab/proscene), [Android](https://github.com/remixlab/proscene.droid) and (soon) JS.
 * API design that provides seemless integration with **Processing** (e.g., providing flexible animation and drawing mechanisms), and allows extensibility of its key features.
-* Default interactivity to your *Processing* scenes through the mouse and keyboard that simply does what you expect.
-* Generic support for [Human Interface Devices](http://en.wikipedia.org/wiki/Human_interface_device).
-* Arcball, walkthrough and third person camera modes.
-* Hierarchical coordinate systems (frames), with functions to convert between them.
-* Coordinate systems can easily be moved with the mouse.
-* Keyframes.
-* Object picking.
+* Generic support to [Human Interface Devices (HIDs)](http://en.wikipedia.org/wiki/Human_interface_device), including not only the mouse and the keyboard, but advanced HID's such as a [touchscreen](http://en.wikipedia.org/wiki/Touchscreen), a [space navigator](http://en.wikipedia.org/wiki/3Dconnexion) or a [kinect](http://en.wikipedia.org/wiki/Kinect).
 * Keyboard shortcuts and HID bindings customization.
+* Hierarchical coordinate systems (frames), with functions to convert between them.
+* Interactive frames (including the camera) which may be manipulated by any HID.
+* Arcball, walkthrough and third person camera modes.
+* Default interactivity to your *Processing* scenes through the mouse (or touchscreen) and keyboard that simply does what you expect.
+* Keyframes.
 * Animation framework.
-* Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 2d) scene.
+* Object picking.
+* Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.
 * Off-screen rendering mode support.
 * Handy set of complete documented examples that illustrates the use of the package
 * A complete [reference documentation](http://otrolado.info/prosceneApi/).
 * Active support and continuous discussions led by the [Processing community](http://forum.processing.org/search/proscene).
+* Released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
 
 # Origin of the name
 
