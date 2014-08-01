@@ -25,7 +25,7 @@ between [Dandelion](http://nakednous.github.io/projects/dandelion) and [Processi
 
 **ProScene** provides seemless integration with **Processing**: its API has been designed to fit that of **Processing** and its implementation has been optimized to work along side with it. It supports all major **Processing** flavours: Desktop, JS, and Android.
 
-**ProScene** support is led by the active and great Processing community at its [forum](http://forum.processing.org/two/search?Search=proscene) where you can reach us.
+**ProScene** support is led by the active and great **Processing** community at its [forum](http://forum.processing.org/two/search?Search=proscene) where you can reach us.
 Please report issues at [github](https://github.com/remixlab/proscene/issues).
 
 # Key features
@@ -38,20 +38,20 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 * Hierarchical coordinate systems (frames), with functions to convert between them.
 * Interactive frames (including the camera) which may be manipulated by any HID.
 * Arcball, walkthrough and third person camera modes.
-* Default interactivity to your *Processing* scenes through the mouse (or touchscreen) and keyboard that simply does what you expect.
+* Default interactivity to your **Processing** scenes through the mouse (or touchscreen) and keyboard that simply does what you expect.
 * Keyframes.
 * Animation framework.
 * Object picking.
 * Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.
 * Off-screen rendering mode support.
-* Handy set of complete documented examples that illustrates the use of the package
+* Handy set of complete documented examples that illustrates the use of the package.
 * A complete [reference documentation](http://otrolado.info/prosceneApi/).
 * Active support and continuous discussions led by the [Processing community](http://forum.processing.org/search/proscene).
 * Released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
 
 # Origin of the name
 
-**ProScene** not only means a *"pro-scene"*, but it is a two-phoneme word pronounced similar as the Czech word *"prosím"* (which means *"please"*), obtained by removing the middle phoneme (*"ce"*) of the word *pro-ce-ssing*. Thus, the name *"ProScene"* suggests the main goal of the package, which is to help you _shorten_ the creation of interactive 2D/3D scenes in *Processing*.
+**ProScene** not only means a *"pro-scene"*, but it is a two-phoneme word pronounced similar as the Czech word *"prosím"* (which means *"please"*), obtained by removing the middle phoneme (*"ce"*) of the word *pro-ce-ssing*. Thus, the name *"ProScene"* suggests the main goal of the package, which is to help you _shorten_ the creation of interactive 2D/3D scenes in **Processing**.
 
 # Usage
 
