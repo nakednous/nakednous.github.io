@@ -30,7 +30,7 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 
 # Key features
 
-* *Tested* under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D Processing renderers. No special dependencies or requirements needed (apart of course from [Processing-2.x](http://processing.org/ Processing-1.5.1)).
+* *Tested* under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D **Processing** renderers. No special dependencies or requirements needed (apart of course from [Processing-2.x](http://processing.org/ Processing-1.5.1)).
 * It supports all major **Processing** flavours: [Desktop](https://github.com/remixlab/proscene), [Android](https://github.com/remixlab/proscene.droid) and (soon) JS.
 * API design that provides seemless integration with **Processing** (e.g., providing flexible animation and drawing mechanisms), and allows extensibility of its key features.
 * Generic support to [Human Interface Devices (HIDs)](http://en.wikipedia.org/wiki/Human_interface_device), including not only the mouse and the keyboard, but advanced HID's such as a [touchscreen](http://en.wikipedia.org/wiki/Touchscreen), a [space navigator](http://en.wikipedia.org/wiki/3Dconnexion) or a [kinect](http://en.wikipedia.org/wiki/Kinect).
@@ -39,15 +39,16 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 * Interactive frames (including the camera) which may be manipulated by any HID.
 * Arcball, walkthrough and third person camera modes.
 * Default interactivity to your **Processing** scenes through the mouse (or touchscreen) and keyboard that simply does what you expect.
+* Visibility culling: Back-face and view-frustum culling.
 * Keyframes.
 * Animation framework.
 * Object picking.
 * Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.
 * Off-screen rendering mode support.
-* Handy set of complete documented examples that illustrates the use of the package.
+* Handy set of complete documented [examples](https://github.com/remixlab/proscene/tree/master/examples) that illustrates the use of the package.
 * A complete [reference documentation](http://otrolado.info/prosceneApi/).
-* Active support and continuous discussions led by the [Processing community](http://forum.processing.org/search/proscene).
-* Released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
+* Active support and continuous discussions led by the [Processing community](http://forum.processing.org/two/search?Search=proscene).
+* Last but not least, released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
 
 # Origin of the name
 
