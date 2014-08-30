@@ -36,23 +36,17 @@ git remote -v
 git pull octopress master
 ```
 
-* Add the git submodule containing the theme
+* Add the git remote containing the theme
 
 ```sh
-git submodule init
-git submodule update
-cd .themes/octostrap3
+git remote add -f octostrap3 https://github.com/kAworu/octostrap3
 ```
 
 * (Optionally) Update the theme to upstream
 
 ```sh
-git remote -v
-git remote add octostrap3 https://github.com/kAworu/octostrap3.git
-git remote -v
-#submodules are headless so create a local working branch:
-git checkout -b work
-git pull octostrap3 master
+git fetch octostrap3 master
+git subtree pull --prefix .themes/octostrap3 octostrap3 master --squash
 ```
 
 * Complete the installation
