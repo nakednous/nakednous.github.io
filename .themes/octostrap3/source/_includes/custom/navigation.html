@@ -12,11 +12,34 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li {% if page.navbar == 'Blog' %}class="active"{% endif %}>
-                    <a rel="index" href="{{ root_url }}/">Blog</a>
+                    <a href="{{ root_url }}/">Blog</a>
                 </li>
-                <li {% if page.navbar == 'Archives' %}class="active"{% endif %}>
-                    <a href="{{ root_url }}/blog/archives">Archives</a>
+                <li {% if page.navbar == 'Projects' %}class="active"{% endif %}>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proscene2 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a href="{{ root_url }}/projects/bias">BIAS</a>
+                        <a href="{{ root_url }}/projects/fpstiming">FPSTiming</a>
+                        <a href="{{ root_url }}/projects/dandelion">Dandelion</a>
+                        <a href="{{ root_url }}/projects/proscene">ProScene</a>
+                      </li>
+                    </ul>
                 </li>
+                <li {% if page.navbar == 'Github' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/github.html">Github</a>
+                </li>
+                <li {% if page.navbar == 'RemixLab' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/remixlab.html">RemixLab</a>
+                </li>
+                <li {% if page.navbar == 'VisualComputing' %}class="active"{% endif %}>
+                    <a href="{{ root_url }}/visualcomputing.html">VisualComputing</a>
+                </li>
+                <!--new item, about
+                <li {% if page.navbar == 'About' %}class="active"{% endif %}>
+		    <a href="{{ root_url }}about.html" title="About">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </a>
+                end about-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -25,6 +48,13 @@
                         <img class="hidden-xs" src="{{ root_url }}/images/rss.png" alt="RSS">
                     </a>
                 </li>
+                <!--new item, about-->
+                <li>
+                    <a class="about" href="{{ root_url }}/about" title="About">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                    </a>
+                </li>
+                <!--end about-->
                 {% if site.subscribe_email %}
                 <li>
                     <a class="subscribe-email" href="{{ site.subscribe_email }}" title="subscribe via email">
