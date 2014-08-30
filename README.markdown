@@ -52,7 +52,6 @@ git subtree pull --prefix .themes/octostrap3 octostrap3 master --squash
 * Complete the installation
 
 ```sh
-cd ../..
 gem install bundler
 #edit your .bashrc to make bundler install gems locally (see: https://wiki.archlinux.org/index.php/ruby#Bundler)
 #now install the gems locally
