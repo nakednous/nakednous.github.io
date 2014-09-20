@@ -4,7 +4,7 @@
   <title><![CDATA[Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-09-08T20:11:01-05:00</updated>
+  <updated>2014-09-20T10:41:28-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.5 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/09/20/proscene-v2-dot-0-5-released/"/>
+    <updated>2014-09-20T10:32:41-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/09/20/proscene-v2-dot-0-5-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.5</strong> is out. It should be possible to import/update it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.5/proscene-2.0.5.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ul>
+  <li>Most of the examples have been simplified to better follow <strong>Processing</strong> style and conventions.</li>
+  <li>Fixes a bug in the <em>KeyFrameInterpolator</em> when restoring a position within a path with a single keyframe.</li>
+  <li>The PointUnderPixel example is back, thanks to the discussion that’s going <a href="https://github.com/processing/processing/issues/2771">here</a>.</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.4 Released]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: dandelion | Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/blog/categories/dandelion/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-09-08T20:11:01-05:00</updated>
+  <updated>2014-09-20T10:41:28-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,24 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v2.0.5 Released]]></title>
+    <link href="http://nakednous.github.io/blog/2014/09/20/proscene-v2-dot-0-5-released/"/>
+    <updated>2014-09-20T10:32:41-05:00</updated>
+    <id>http://nakednous.github.io/blog/2014/09/20/proscene-v2-dot-0-5-released</id>
+    <content type="html"><![CDATA[<p><strong>Proscene v2.0.5</strong> is out. It should be possible to import/update it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.5/proscene-2.0.5.zip">here</a> 
+and extract it to your sketchbook <code>libraries</code> folder.</p>
+
+<h1 id="changelog">Changelog</h1>
+
+<ul>
+  <li>Most of the examples have been simplified to better follow <strong>Processing</strong> style and conventions.</li>
+  <li>Fixes a bug in the <em>KeyFrameInterpolator</em> when restoring a position within a path with a single keyframe.</li>
+  <li>The PointUnderPixel example is back, thanks to the discussion that’s going <a href="https://github.com/processing/processing/issues/2771">here</a>.</li>
+</ul>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.4 Released]]></title>
@@ -87,55 +105,6 @@ and extract it to your sketchbook <code>libraries</code> folder.</p>
   </li>
   <li>New example <code>Frame.FrameAPI</code> added. The example illustrates the powerful Frame API used to convert points and vectors along a frame hierarchy.</li>
 </ol>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Proscene v2.0.0 Released]]></title>
-    <link href="http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released/"/>
-    <updated>2014-05-31T18:28:06-05:00</updated>
-    <id>http://nakednous.github.io/blog/2014/05/31/proscene-v2-dot-0-0-released</id>
-    <content type="html"><![CDATA[<p><strong>Proscene v2.0.0</strong> is out. Being a stable release, it should now be possible to import it directly from your PDE. Otherwise download it <a href="https://github.com/remixlab/proscene/releases/download/v-2.0.0/proscene-2.0.0.zip">here</a> 
-and extract it to your sketchbook <code>libraries</code> folder.</p>
-
-<p>The library aims at providing interactivity to <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Frame.html">Frames</a>
-(coordinate systems) allowing picking and motion control of objects, including the
-<a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Eye.html">Eye</a>, which in 3D is referred to as the
-<a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/Camera.html">Camera</a>.
-Version 2 introduces a new library design supporting all the features found in version 1 plus some others.
-Perhaps the three key new features are:</p>
-
-<ol>
-  <li>Cross-platform support: the new library architecture separates the core functionalities from the language/platform where target
-applications are to be run. <strong>ProScene</strong> may be regarded just as an interface between that core and <strong>Processing</strong>.
-Details may be found <a href="http://nakednous.github.io/projects/proscene/">here</a>. The <code>Demos.MatrixShader</code> example shows a taste of it.</li>
-  <li>Support to all sorts of interaction mechanisms, including the standard mouse and keyboard, but not being particularly tie
-to any of them. i.e., it’s <em>device agnostic</em> by design. The examples of the <code>Input</code> section illustrate the approach.</li>
-  <li>Support for 2D as well as 3D Processing renderers. Many of the examples are available in both cases.</li>
-</ol>
-
-<p>Combined, features 1. and 2., represent the foundation to implement a wide range of setups ranging from simple to very complex ones.
-For instance, we already began a <strong>ProScene</strong> Android port, which is currently taken place at its own
-<a href="https://github.com/remixlab/proscene.droid">fork</a>. We hope to integrate it back upstream once <em>TouchEvents</em> are directly
-supported in <strong>Processing</strong>. We also plan a first release of the Android port soon, so please stay tuned. In the mean time, have a look
-at the <code>examples.Demos.Android2DOF</code>,<code>examples.Demos.Android3DOF</code> which only require the Android-mode of <strong>Processing</strong> to run. We also
-implemented a <strong>kinect</strong> interface to control the camera on top of that foundation. The demo may be found at <code>examples.Demos.Kinect5DOF</code>
-and the gestures implemented to control the camera <a href="https://www.youtube.com/watch?v=G8SEzFMmMyI">here</a>. Finally, we hope that the
-Version 2 cycle will see the first <strong>Java-Script</strong> port taking the most out of our approach.</p>
-
-<p>This release also includes additional examples illustrating most of the new features. We are confident that a <em>learn-by-example</em> methodology
-is the main (and most entertained) way to get use to them. The <a href="http://otrolado.info/prosceneApi/">API</a> has also been thoroughly reviewed
-and fully documented.</p>
-
-<p>Happy hacking!</p>
-
-<h1 id="acknowledgments">Acknowledgments</h1>
-
-<p>Thanks to <a href="http://edumo.net/">Eduardo Moriana</a> and <a href="http://maparrar.github.io/">Miguel Parra</a> for their contributions with the <a href="http://www.tuio.org/">TUIO</a>-based touch and kinect interfaces, respectively.
-Thanks to experimental computational designer <a href="https://twitter.com/AmnonOwed/media">Amnon Owed</a> for his collaboration with polishing the KeyFrameInterpolator sub-system.
-Thanks to <a href="http://www.xelyx.fr">Jacques Maire</a> for providing most of the examples found at the <em>contrib</em> section. Thanks to <a href="http://codeanticode.wordpress.com/">Andres Colubri</a> for his continuous support and thorough insights.
-Thanks to <a href="https://sites.google.com/site/proscenedroi/home">Victor Forero</a> who is developing the <a href="https://github.com/remixlab/proscene.droid">proscene Android port</a>.
-Thanks also to all <strong>ProScene</strong> users whose sketchs and library hacks always amaze and inspire us.</p>
 ]]></content>
   </entry>
   
