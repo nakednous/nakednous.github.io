@@ -46,7 +46,7 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 * Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.
 * Off-screen rendering mode support.
 * Handy set of complete documented [examples](https://github.com/remixlab/proscene/tree/master/examples) that illustrates the use of the package.
-* A complete [reference documentation](http://otrolado.info/prosceneApi/).
+* A complete [API reference documentation](http://otrolado.info/prosceneApi/).
 * Active support and continuous discussions led by the [Processing community](http://forum.processing.org/two/search?Search=proscene).
 * Last but not least, released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
 
@@ -62,7 +62,7 @@ All library features requires a `Scene` object (which is the main package class)
 2. **Inheritance**. In this case, once you declare a `Scene` derived class, you should implement `proscenium()` which defines the objects in your scene. Just make sure to define the `PApplet.draw()` method, even if it's empty.
 3. **External draw handler registration**. You can even declare an external drawing method and then register it at the Scene with `addDrawHandler(Object, String)`. That method should return `void` and have one single `Scene` parameter. This strategy may be useful when you have the same drawing code shared among multiple viewers.
 
-See the examples **BasicUse**, **AlternativeUse**, and **AuxiliarViewer** for an illustration of these techniques. To get start using the library and learn its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of the fully documented [API reference](http://www.disi.unal.edu.co/grupos/remixlab/local/projects/proscene-1.1.0/reference/index.html) (which is also included in the package file).
+See the examples **BasicUse**, **AlternativeUse**, and **AuxiliarViewer** for an illustration of these techniques. To get start using the library and learn its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of the fully documented [API reference](http://otrolado.info/prosceneApi/) (which is also included in the package file).
 
 # Installation
 
