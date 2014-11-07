@@ -13,5 +13,6 @@ given at [National University of Colombia](http://www.disi.unal.edu.co/).
 
 1. [Transformations](http://visualcomputing.github.io/Transformations).
 2. [Projections](http://visualcomputing.github.io/projection).
+3. [Shaders](http://visualcomputing.github.io/shaders).
 
 More presentations will be added [here](https://github.com/VisualComputing/) as soon as they're ready, so please stay tuned...
