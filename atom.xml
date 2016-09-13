@@ -4,7 +4,7 @@
   <title><![CDATA[Jean Pierre Charalambos]]></title>
   <link href="http://nakednous.github.io/atom.xml" rel="self"/>
   <link href="http://nakednous.github.io/"/>
-  <updated>2014-11-07T17:41:54-05:00</updated>
+  <updated>2016-09-13T15:59:37-05:00</updated>
   <id>http://nakednous.github.io/</id>
   <author>
     <name><![CDATA[Jean Pierre Charalambos]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Proscene v3.0.0-* Release Notes]]></title>
+    <link href="http://nakednous.github.io/blog/2016/09/13/proscene-v3-dot-0-0-star-release-notes/"/>
+    <updated>2016-09-13T15:51:47-05:00</updated>
+    <id>http://nakednous.github.io/blog/2016/09/13/proscene-v3-dot-0-0-star-release-notes</id>
+    <content type="html"><![CDATA[<p>Proscene-v3 is currently under development. Some (quite stable) beta releases are found <a href="https://github.com/remixlab/proscene/releases">here</a>. Release notes
+are also maintain there. Please note that the latest release can always be downloaded automatically through the Processing Development Environment (PDE) contribution
+manager.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Proscene v2.0.5 Released]]></title>
