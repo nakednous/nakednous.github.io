@@ -9,7 +9,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    curb (0.8.5)
+    curb (0.8.8)
     directory_watcher (1.4.1)
     fast-stemmer (1.0.2)
     feedzirra (0.4.0)
