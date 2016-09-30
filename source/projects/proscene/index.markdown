@@ -19,7 +19,7 @@ footer: true
 
 # Introduction
 
-A 2D or 3D interactive [Processing](http://processing.org) [Scene](http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html).
+A 2D or 3D interactive [Processing](http://processing.org) [Scene](http://remixlab.github.io/proscene-javadocs/remixlab/dandelion/core/AbstractScene.html).
 **ProScene** (pronounced similar as the Czech word **"prosím"** which means **"please"**) provides an interface
 between [Dandelion](http://nakednous.github.io/projects/dandelion) and [Processing](http://processing.org) (Figure 1 depicts the software architecture).
 
@@ -30,8 +30,8 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 
 # Key features
 
-* *Tested* under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D **Processing** renderers. No special dependencies or requirements needed (apart of course from [Processing-2.x](http://processing.org/ Processing-1.5.1)).
-* It supports all major **Processing** flavours: [Desktop](https://github.com/remixlab/proscene), [Android](https://github.com/remixlab/proscene.droid) and (soon) JS.
+* *Tested* under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D **Processing** renderers. No special dependencies or requirements needed (apart of course from [Processing-3.x](https://github.com/processing/processing/releases)).
+* It supports all major **Processing** flavours: Desktop, Android (since 790c16d790540d60e690b44287e1122d0c9c11bd) and (soon) JS.
 * API design that provides seemless integration with **Processing** (e.g., providing flexible animation and drawing mechanisms), and allows extensibility of its key features.
 * Generic support to [Human Interface Devices (HIDs)](http://en.wikipedia.org/wiki/Human_interface_device), including not only the mouse and the keyboard, but advanced HID's such as a [touchscreen](http://en.wikipedia.org/wiki/Touchscreen), a [space navigator](http://en.wikipedia.org/wiki/3Dconnexion) or a [kinect](http://en.wikipedia.org/wiki/Kinect).
 * Keyboard shortcuts and HID bindings customization.
@@ -45,14 +45,16 @@ Please report issues at [github](https://github.com/remixlab/proscene/issues).
 * Object picking.
 * Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.
 * Off-screen rendering mode support.
+* Save and load configurations.
+* 2D and 3D Interactive [mini-maps](https://en.wikipedia.org/wiki/Mini-map).
 * Handy set of complete documented [examples](https://github.com/remixlab/proscene/tree/master/examples) that illustrates the use of the package.
-* A complete [API reference documentation](http://otrolado.info/prosceneApi/).
+* A complete [API reference documentation](http://remixlab.github.io/proscene-javadocs/).
 * Active support and continuous discussions led by the [Processing community](http://forum.processing.org/two/search?Search=proscene).
 * Last but not least, released as free software under the terms of the [GPL-v3](http://www.gnu.org/licenses/gpl.html).
 
 # Origin of the name
 
-**ProScene** not only means a *"pro-scene"*, but it is a two-phoneme word pronounced similar as the Czech word *"prosím"* (which means *"please"*), obtained by removing the middle phoneme (*"ce"*) of the word *pro-ce-ssing*. Thus, the name *"ProScene"* suggests the main goal of the package, which is to help you _shorten_ the creation of interactive 2D/3D scenes in **Processing**.
+*ProScene* not only means a *"pro-scene"*, but it is a two-phoneme word pronounced similar as the Czech word *"prosím"* (which means *"please"*), obtained by removing the middle phoneme (*"ce"*) of the word *pro-ce-ssing*. Thus, the name *"ProScene"* suggests the main goal of the package, which is to help you _shorten_ the creation of interactive 2D/3D scenes in **Processing**.
 
 # Usage
 
@@ -62,7 +64,11 @@ All library features requires a `Scene` object (which is the main package class)
 2. **Inheritance**. In this case, once you declare a `Scene` derived class, you should implement `proscenium()` which defines the objects in your scene. Just make sure to define the `PApplet.draw()` method, even if it's empty.
 3. **External draw handler registration**. You can even declare an external drawing method and then register it at the Scene with `addDrawHandler(Object, String)`. That method should return `void` and have one single `Scene` parameter. This strategy may be useful when you have the same drawing code shared among multiple viewers.
 
-See the examples **BasicUse**, **AlternativeUse**, and **AuxiliarViewer** for an illustration of these techniques. To get start using the library and learn its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of the fully documented [API reference](http://otrolado.info/prosceneApi/) (which is also included in the package file).
+See the examples **BasicUse**, **AlternativeUse**, and **StandardCamera** for an illustration of these techniques. To get start using the library and learn
+its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and
+include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of
+the fully documented [API reference](http://remixlab.github.io/proscene-javadocs/) (which is also
+included in the package file).
 
 # Installation
 

@@ -6,7 +6,7 @@ void setup() {
   size(500,290);
   background(125);
   fill(255);
-  proscene = new MyRect(10,10,480,270,"ProScene2","http://nakednous.github.io/projects/proscene");
+  proscene = new MyRect(10,10,480,270,"ProScene","http://nakednous.github.io/projects/proscene");
   dandelion = new MyRect(30,50,430,210,"Dandelion","http://nakednous.github.io/projects/dandelion");
   fpstiming = new MyRect(250,90,180,150,"FPSTiming","http://nakednous.github.io/projects/fpstiming");
   bias = new MyRect(50,90,180,150,"BIAS","http://nakednous.github.io/projects/bias");
