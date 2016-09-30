@@ -62,7 +62,7 @@
                     <a href="/">Blog</a>
                 </li>
                 <li >
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proscene2 <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proscene <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li>
                         <a href="/projects/bias">BIAS</a>
@@ -159,7 +159,7 @@
 
 <h1 id="introduction">Introduction</h1>
 
-<p>A 2D or 3D interactive <a href="http://processing.org">Processing</a> <a href="http://otrolado.info/prosceneApi/remixlab/dandelion/core/AbstractScene.html">Scene</a>.
+<p>A 2D or 3D interactive <a href="http://processing.org">Processing</a> <a href="http://remixlab.github.io/proscene-javadocs/remixlab/dandelion/core/AbstractScene.html">Scene</a>.
 <strong>ProScene</strong> (pronounced similar as the Czech word <strong>“prosím”</strong> which means <strong>“please”</strong>) provides an interface
 between <a href="http://nakednous.github.io/projects/dandelion">Dandelion</a> and <a href="http://processing.org">Processing</a> (Figure 1 depicts the software architecture).</p>
 
@@ -171,8 +171,8 @@ Please report issues at <a href="https://github.com/remixlab/proscene/issues">gi
 <h1 id="key-features">Key features</h1>
 
 <ul>
-  <li><em>Tested</em> under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D <strong>Processing</strong> renderers. No special dependencies or requirements needed (apart of course from <a href="http://processing.org/ Processing-1.5.1">Processing-2.x</a>).</li>
-  <li>It supports all major <strong>Processing</strong> flavours: <a href="https://github.com/remixlab/proscene">Desktop</a>, <a href="https://github.com/remixlab/proscene.droid">Android</a> and (soon) JS.</li>
+  <li><em>Tested</em> under Linux, Mac OSX and Windows, and properly works with the JAVA2D, P2D and P3D <strong>Processing</strong> renderers. No special dependencies or requirements needed (apart of course from <a href="https://github.com/processing/processing/releases">Processing-3.x</a>).</li>
+  <li>It supports all major <strong>Processing</strong> flavours: Desktop, Android (since 790c16d790540d60e690b44287e1122d0c9c11bd) and (soon) JS.</li>
   <li>API design that provides seemless integration with <strong>Processing</strong> (e.g., providing flexible animation and drawing mechanisms), and allows extensibility of its key features.</li>
   <li>Generic support to <a href="http://en.wikipedia.org/wiki/Human_interface_device">Human Interface Devices (HIDs)</a>, including not only the mouse and the keyboard, but advanced HID’s such as a <a href="http://en.wikipedia.org/wiki/Touchscreen">touchscreen</a>, a <a href="http://en.wikipedia.org/wiki/3Dconnexion">space navigator</a> or a <a href="http://en.wikipedia.org/wiki/Kinect">kinect</a>.</li>
   <li>Keyboard shortcuts and HID bindings customization.</li>
@@ -186,15 +186,17 @@ Please report issues at <a href="https://github.com/remixlab/proscene/issues">gi
   <li>Object picking.</li>
   <li>Screen drawing, i.e., drawing of 2d primitives on top of another (2d or 3d) scene.</li>
   <li>Off-screen rendering mode support.</li>
+  <li>Save and load configurations.</li>
+  <li>2D and 3D Interactive <a href="https://en.wikipedia.org/wiki/Mini-map">mini-maps</a>.</li>
   <li>Handy set of complete documented <a href="https://github.com/remixlab/proscene/tree/master/examples">examples</a> that illustrates the use of the package.</li>
-  <li>A complete <a href="http://otrolado.info/prosceneApi/">API reference documentation</a>.</li>
+  <li>A complete <a href="http://remixlab.github.io/proscene-javadocs/">API reference documentation</a>.</li>
   <li>Active support and continuous discussions led by the <a href="http://forum.processing.org/two/search?Search=proscene">Processing community</a>.</li>
   <li>Last but not least, released as free software under the terms of the <a href="http://www.gnu.org/licenses/gpl.html">GPL-v3</a>.</li>
 </ul>
 
 <h1 id="origin-of-the-name">Origin of the name</h1>
 
-<p><strong>ProScene</strong> not only means a <em>“pro-scene”</em>, but it is a two-phoneme word pronounced similar as the Czech word <em>“prosím”</em> (which means <em>“please”</em>), obtained by removing the middle phoneme (<em>“ce”</em>) of the word <em>pro-ce-ssing</em>. Thus, the name <em>“ProScene”</em> suggests the main goal of the package, which is to help you <em>shorten</em> the creation of interactive 2D/3D scenes in <strong>Processing</strong>.</p>
+<p><em>ProScene</em> not only means a <em>“pro-scene”</em>, but it is a two-phoneme word pronounced similar as the Czech word <em>“prosím”</em> (which means <em>“please”</em>), obtained by removing the middle phoneme (<em>“ce”</em>) of the word <em>pro-ce-ssing</em>. Thus, the name <em>“ProScene”</em> suggests the main goal of the package, which is to help you <em>shorten</em> the creation of interactive 2D/3D scenes in <strong>Processing</strong>.</p>
 
 <h1 id="usage">Usage</h1>
 
@@ -206,7 +208,11 @@ Please report issues at <a href="https://github.com/remixlab/proscene/issues">gi
   <li><strong>External draw handler registration</strong>. You can even declare an external drawing method and then register it at the Scene with <code>addDrawHandler(Object, String)</code>. That method should return <code>void</code> and have one single <code>Scene</code> parameter. This strategy may be useful when you have the same drawing code shared among multiple viewers.</li>
 </ol>
 
-<p>See the examples <strong>BasicUse</strong>, <strong>AlternativeUse</strong>, and <strong>AuxiliarViewer</strong> for an illustration of these techniques. To get start using the library and learn its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of the fully documented <a href="http://otrolado.info/prosceneApi/">API reference</a> (which is also included in the package file).</p>
+<p>See the examples <strong>BasicUse</strong>, <strong>AlternativeUse</strong>, and <strong>StandardCamera</strong> for an illustration of these techniques. To get start using the library and learn
+its main features, have a look at the complete set of well documented examples that come along with it. Other uses are also covered in the example set and
+include (but are not limited to): drawing mechanisms, animation framework, and camera and keyboard customization. Advanced users may take full advantage of
+the fully documented <a href="http://remixlab.github.io/proscene-javadocs/">API reference</a> (which is also
+included in the package file).</p>
 
 <h1 id="installation">Installation</h1>
 
